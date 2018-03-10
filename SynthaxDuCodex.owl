@@ -8,16 +8,17 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://Synthax.du.Codex/ontology">
-        <dc:title>Synthax du Codex</dc:title>
-        <dc:description>Ontology based on the book La Synthax du Codex</dc:description>
+        <owl:versionIRI rdf:resource="http://Synthax.du.Codex/ontology/0.1"/>
+        <dc:title>La Synthaxe du Codex</dc:title>
         <dc:language>en</dc:language>
+        <dc:description>Ontology based on the book &quot;La Synthaxe du Codex. Essai de codicologie structurale&quot; by Patrick Andrist, Paul Canart and Marilena Maniaci, Turnhout: Brepols 2013.</dc:description>
         <dc:language>fr</dc:language>
         <dc:creator>Pietro Maria Liuzzo</dc:creator>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -25,16 +26,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
-
-
-    <!-- #isPartOfTransformation -->
-
-    <owl:ObjectProperty rdf:about="http://Synthax.du.Codex/ontology#isPartOfTransformation">
-        <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#Simple"/>
-        <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#Multiples"/>
-    </owl:ObjectProperty>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#constituteUnit -->
@@ -43,8 +35,9 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#Discontinuite"/>
         <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#UniProd"/>
+        <rdfs:comment xml:lang="en">states that one or more identified discontinuities constitute a unit, which can be certain or hypothetical</rdfs:comment>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#containsUnits -->
@@ -52,19 +45,45 @@
     <owl:ObjectProperty rdf:about="http://Synthax.du.Codex/ontology#containsUnits">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#UniCirc"/>
+        <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#UniProd"/>
+        <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#Discontinuite"/>
         <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#UniProd"/>
     </owl:ObjectProperty>
+    
 
+
+    <!-- http://Synthax.du.Codex/ontology#hasCertainty -->
+
+    <owl:ObjectProperty rdf:about="http://Synthax.du.Codex/ontology#hasCertainty">
+        <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#Discontinuite"/>
+        <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#Transformation"/>
+        <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#UniCirc"/>
+        <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#UniProd"/>
+        <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#Certain"/>
+        <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#Hypothetique"/>
+    </owl:ObjectProperty>
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#hasTransformationModel -->
 
     <owl:ObjectProperty rdf:about="http://Synthax.du.Codex/ontology#hasTransformationModel">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#UniCirc"/>
         <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#UniProd"/>
         <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#Transformation"/>
     </owl:ObjectProperty>
+    
 
+
+    <!-- http://Synthax.du.Codex/ontology#hasTransformationPart -->
+
+    <owl:ObjectProperty rdf:about="http://Synthax.du.Codex/ontology#hasTransformationPart">
+        <owl:inverseOf rdf:resource="http://Synthax.du.Codex/ontology#isPartOfTransformation"/>
+        <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#Simple"/>
+        <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#Multiples"/>
+    </owl:ObjectProperty>
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#hasUnitModel -->
@@ -74,16 +93,16 @@
         <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#Discontinuite"/>
         <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#Modele"/>
     </owl:ObjectProperty>
+    
 
 
+    <!-- http://Synthax.du.Codex/ontology#isPartOfTransformation -->
 
-    <!-- http://Synthax.du.Codex/ontology#hastransformationpart -->
-
-    <owl:ObjectProperty rdf:about="http://Synthax.du.Codex/ontology#hastransformationpart">
-        <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#Multiples"/>
-        <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#Simple"/>
+    <owl:ObjectProperty rdf:about="http://Synthax.du.Codex/ontology#isPartOfTransformation">
+        <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#Simple"/>
+        <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#Multiples"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#produces -->
@@ -92,8 +111,9 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#Transformation"/>
         <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#UniCirc"/>
+        <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#UniProd"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#undergoesTransformation -->
@@ -103,10 +123,22 @@
         <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#UniProd"/>
         <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#Transformation"/>
     </owl:ObjectProperty>
+    
 
 
+    <!-- http://purl.org/dc/terms/hasPart -->
 
-    <!--
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/hasPart">
+        <owl:inverseOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#UniCirc"/>
+        <rdfs:domain rdf:resource="http://Synthax.du.Codex/ontology#UniProd"/>
+        <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#Discontinuite"/>
+        <rdfs:range rdf:resource="http://Synthax.du.Codex/ontology#UniProd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -114,39 +146,53 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#A1 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#A1">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Accroissement"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#MA3"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#MA4"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#R1"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#R3"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Restauration"/>
+        <rdfs:label xml:lang="fr">ajout de support matériel avec contenu</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#A2 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#A2">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Accroissement"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#R2"/>
+        <rdfs:label xml:lang="fr">ajout de contenu sans support matériel</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#A3 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#A3">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Accroissement"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UA1"/>
+        <rdfs:label xml:lang="fr">ajout de contenu et de support matériel avec contenu</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#A4 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#A4">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Accroissement"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#MA1"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#P1"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UA1"/>
+        <rdfs:label xml:lang="fr">union de codex</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Accroissement -->
@@ -155,103 +201,139 @@
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Simple"/>
         <owl:disjointWith rdf:resource="http://Synthax.du.Codex/ontology#Decroissement"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Cah1 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Cah1">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleCah"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniCah"/>
+        <rdfs:label xml:lang="fr">série de structure uniforme</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Cah2 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Cah2">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleCah"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniCah"/>
+        <rdfs:label xml:lang="fr">séries homogènes de cahiers de structure différentes</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Cah3 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Cah3">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleCah"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniCah"/>
+        <rdfs:label xml:lang="fr">série récurrente de cahiers de structures différentes</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Cah4 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Cah4">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleCah"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniCah"/>
+        <rdfs:label xml:lang="fr">série à changements aléatoires</rdfs:label>
     </owl:Class>
+    
 
+
+    <!-- http://Synthax.du.Codex/ontology#Certain -->
+
+    <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Certain"/>
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Cont1 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Cont1">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleCont"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniCont"/>
+        <rdfs:label xml:lang="fr">texte unitaire</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Cont2 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Cont2">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleCont"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniCont"/>
+        <rdfs:label xml:lang="fr">plusieurs textes sans lien</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Cont3 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Cont3">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleCont"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniCont"/>
+        <rdfs:label xml:lang="fr">texte unitaire et sous-unités potentiellement autonomes</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Cont4 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Cont4">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleCont"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniCont"/>
+        <rdfs:label xml:lang="fr">collections</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Cont5 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Cont5">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleCont"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniCont"/>
+        <rdfs:label xml:lang="fr">textes subordonnés</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#D1 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#D1">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Decroissement"/>
+        <rdfs:label xml:lang="fr">destruction totale</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#D2 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#D2">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Decroissement"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#MA1"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#MA2"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#MA3"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#MA4"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#R1"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#R2"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#R3"/>
+        <rdfs:label xml:lang="fr">destruction partielle</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#D3 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#D3">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Decroissement"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#MA1"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Permutation"/>
+        <rdfs:label xml:lang="fr">division simple</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Decroissement -->
@@ -259,61 +341,118 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Decroissement">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Simple"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Discontinuite -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Discontinuite"/>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Ecri1 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Ecri1">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleEcri"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniEcri"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMain"/>
+        <rdfs:label xml:lang="fr">texte non structuré, sans aucune discontinuité graphique</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Ecri2 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Ecri2">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleEcri"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniEcri"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMain"/>
+        <rdfs:label xml:lang="fr">texte non structuré, mais avec des discontinuités graphiques</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Ecri3 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Ecri3">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleEcri"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniEcri"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMain"/>
+        <rdfs:label xml:lang="fr">texte structuré par un seul appareil hiérarchisant (simple ou alternant), basé sur des discontinuités graphiques, mais sans discontinuités étrangères au système</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Ecri4 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Ecri4">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleEcri"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniEcri"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMain"/>
+        <rdfs:label xml:lang="fr">texte structuré par un seul appareil hiérarchisant, avec présence de discontinuités graphiques non fonctionnelles</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Ecri5 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Ecri5">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleEcri"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniEcri"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMain"/>
+        <rdfs:label xml:lang="fr">texte structuré par différents appareils hiérarchisants, basés sur des discontinuités graphiques, mais sans discontinuités étrangères au système</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Ecri6 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Ecri6">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleEcri"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniEcri"/>
+        <rdfs:label xml:lang="fr">texte structuré par différents appareils hiérarchisants, présentant en outre des discontinuités non fonctionnelles</rdfs:label>
     </owl:Class>
+    
 
+
+    <!-- http://Synthax.du.Codex/ontology#ElCah -->
+
+    <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ElCah">
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniCah"/>
+    </owl:Class>
+    
+
+
+    <!-- http://Synthax.du.Codex/ontology#ElCont -->
+
+    <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ElCont">
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniCont"/>
+    </owl:Class>
+    
+
+
+    <!-- http://Synthax.du.Codex/ontology#ElEcri -->
+
+    <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ElEcri">
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniEcri"/>
+    </owl:Class>
+    
+
+
+    <!-- http://Synthax.du.Codex/ontology#ElMain -->
+
+    <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ElMain">
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://Synthax.du.Codex/ontology#ElMarq -->
+
+    <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ElMarq">
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMarq"/>
+    </owl:Class>
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#ElMat -->
@@ -321,142 +460,194 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ElMat">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMat"/>
     </owl:Class>
+    
 
+
+    <!-- http://Synthax.du.Codex/ontology#ElMeP -->
+
+    <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ElMeP">
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMeP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://Synthax.du.Codex/ontology#ElRegl -->
+
+    <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ElRegl">
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniRegl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://Synthax.du.Codex/ontology#Hypothetique -->
+
+    <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Hypothetique"/>
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#MA1 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#MA1">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#MutilationAjout"/>
+        <rdfs:label xml:lang="fr">mutilation d&apos;un codex pour en accoroître un autre</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#MA2 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#MA2">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#MutilationAjout"/>
+        <rdfs:label xml:lang="fr">mutilation d&apos;un codex pour en constituer un autre</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#MA3 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#MA3">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#MutilationAjout"/>
+        <rdfs:label xml:lang="fr">matériaux de rempoi à usage accessoire</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#MA4 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#MA4">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#MutilationAjout"/>
+        <rdfs:label xml:lang="fr">palimpsestes</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Main1 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Main1">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleMain"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniEcri"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMain"/>
         <owl:disjointWith rdf:resource="http://Synthax.du.Codex/ontology#Main2"/>
+        <rdfs:label xml:lang="fr">plusieurs mains responsables chacune de l&apos;intégralité du système</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Main2 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Main2">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleMain"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniEcri"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMain"/>
+        <rdfs:label xml:lang="fr">plusieurs mains spécialisées dans un ou plusieurs éléments du même système</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Mat1 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Mat1">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleMat"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMat"/>
+        <rdfs:label xml:lang="fr">matière parfaitement uniforme</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Mat2 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Mat2">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleMat"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMat"/>
+        <rdfs:label xml:lang="fr">matière bien séparées</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Mat3 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Mat3">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleMat"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMat"/>
+        <rdfs:label xml:lang="fr">matière mélangées selon un critère discernable</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Mat4 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Mat4">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleMat"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMat"/>
+        <rdfs:label xml:lang="fr">matières regroupables selon plusieurs critères</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Mat5 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Mat5">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleMat"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMat"/>
+        <rdfs:label xml:lang="fr">matières mélangées au hasard</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Mep1 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Mep1">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleMeP"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMeP"/>
+        <rdfs:label xml:lang="fr">type de réglure uniforme (utilisée de manière uniforme)</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Mep2 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Mep2">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleMeP"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMeP"/>
+        <rdfs:label xml:lang="fr">types de réglure différentes (chacun utilisé de manière uniforme)</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Mep3 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Mep3">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleMeP"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMeP"/>
+        <rdfs:label xml:lang="fr">type de réglure (presque) uniforme, avec variations mineures</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Mep4 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Mep4">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleMeP"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMeP"/>
+        <rdfs:label xml:lang="fr">types de réglure uniformes, utilisés de manières différentes</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Mep5 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Mep5">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleMeP"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMeP"/>
+        <rdfs:label xml:lang="fr">types de réglure différents, tous à même utilisation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Modele -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Modele"/>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#ModeleCah -->
@@ -464,7 +655,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ModeleCah">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Modele"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#ModeleCont -->
@@ -472,15 +663,16 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ModeleCont">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Modele"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#ModeleEcri -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ModeleEcri">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Modele"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniMain"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#ModeleMain -->
@@ -488,7 +680,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ModeleMain">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Modele"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#ModeleMarq -->
@@ -496,7 +688,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ModeleMarq">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Modele"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#ModeleMat -->
@@ -504,7 +696,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ModeleMat">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Modele"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#ModeleMeP -->
@@ -512,7 +704,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ModeleMeP">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Modele"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#ModeleRegl -->
@@ -520,7 +712,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#ModeleRegl">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Modele"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Multiples -->
@@ -529,7 +721,7 @@
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Transformation"/>
         <owl:disjointWith rdf:resource="http://Synthax.du.Codex/ontology#Simple"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#MutilationAjout -->
@@ -537,15 +729,16 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#MutilationAjout">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Multiples"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#P1 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#P1">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Permutation"/>
+        <rdfs:label xml:lang="fr">permutation de folios ou de cahiers</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Permutation -->
@@ -553,55 +746,65 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Permutation">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Multiples"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#R1 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#R1">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Remplacement"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Restauration"/>
+        <rdfs:label xml:lang="fr">suppression et rajout de matière (avec ou sans contenu)</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#R2 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#R2">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Remplacement"/>
+        <rdfs:label xml:lang="fr">suppression et rajout de contenu</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#R3 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#R3">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Remplacement"/>
+        <rdfs:label xml:lang="fr">superposition de matière</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Regl1 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Regl1">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleRegl"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniRegl"/>
+        <rdfs:label xml:lang="fr">réglure uniforme (technique, système, méthode)</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Regl2 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Regl2">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleRegl"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniRegl"/>
+        <rdfs:label xml:lang="fr">technique différentes</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Regl3 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Regl3">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#ModeleRegl"/>
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniRegl"/>
+        <rdfs:label xml:lang="fr">technique uniforme, mais autres discontinuités</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Remplacement -->
@@ -609,7 +812,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Remplacement">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Multiples"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Restauration -->
@@ -617,7 +820,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Restauration">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Multiples"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Simple -->
@@ -625,21 +828,22 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Simple">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Transformation"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#Transformation -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#Transformation"/>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UA1 -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UA1">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UnionAjout"/>
+        <rdfs:label xml:lang="fr">union suivi d&apos;accroissement</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniCah -->
@@ -647,13 +851,13 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniCah">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Discontinuite"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniCirc -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniCirc"/>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniCont -->
@@ -661,7 +865,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniCont">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Discontinuite"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniEcri -->
@@ -669,7 +873,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniEcri">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Discontinuite"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniMain -->
@@ -677,7 +881,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniMain">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Discontinuite"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniMarq -->
@@ -685,7 +889,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniMarq">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Discontinuite"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniMat -->
@@ -693,7 +897,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniMat">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Discontinuite"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniMeP -->
@@ -701,13 +905,13 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniMeP">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Discontinuite"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniProd -->
 
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniProd"/>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniProd-C -->
@@ -715,7 +919,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniProd-C">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniProd"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniProd-C-MC -->
@@ -723,7 +927,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniProd-C-MC">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniProd"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniProd-M -->
@@ -731,7 +935,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniProd-M">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniProd"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniProd-MC -->
@@ -739,7 +943,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniProd-MC">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#UniProd"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UniRegl -->
@@ -747,7 +951,7 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UniRegl">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Discontinuite"/>
     </owl:Class>
-
+    
 
 
     <!-- http://Synthax.du.Codex/ontology#UnionAjout -->
@@ -755,10 +959,18 @@
     <owl:Class rdf:about="http://Synthax.du.Codex/ontology#UnionAjout">
         <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#Multiples"/>
     </owl:Class>
+    
 
 
+    <!-- http://Synthax.du.Codex/ontology#creation -->
 
-    <!--
+    <owl:Class rdf:about="http://Synthax.du.Codex/ontology#creation">
+        <rdfs:subClassOf rdf:resource="http://Synthax.du.Codex/ontology#MA2"/>
+    </owl:Class>
+    
+
+
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // General axioms
@@ -905,3 +1117,4 @@
 
 
 <!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

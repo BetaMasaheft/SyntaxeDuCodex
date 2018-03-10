@@ -2,23 +2,27 @@
   "_comment": "Created with OWL2VOWL (version 0.3.3-SNAPSHOT), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.0.6]",
   "header": {
     "languages": [
+      "en",
+      "fr",
       "undefined"
     ],
     "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
       "http://www.w3.org/2002/07/owl",
       "http://www.w3.org/2000/01/rdf-schema",
+      "http://purl.org/dc/terms",
       "http://www.w3.org/2001/XMLSchema",
       "http://Synthax.du.Codex/ontology"
     ],
     "title": {
-      "undefined": "Synthax du Codex"
+      "undefined": "La Synthaxe du Codex"
     },
     "iri": "http://Synthax.du.Codex/ontology",
     "author": [
       "Pietro Maria Liuzzo"
     ],
     "description": {
-      "undefined": "Ontology based on the book La Synthax du Codex"
+      "undefined": "Ontology based on the book \"La Synthaxe du Codex. Essai de codicologie structurale\" by Patrick Andrist, Paul Canart and Marilena Maniaci, Turnhout: Brepols 2013."
     },
     "other": {
       "creator": [
@@ -33,13 +37,13 @@
         {
           "identifier": "language",
           "language": "undefined",
-          "value": "en",
+          "value": "fr",
           "type": "label"
         },
         {
           "identifier": "language",
           "language": "undefined",
-          "value": "fr",
+          "value": "en",
           "type": "label"
         }
       ],
@@ -47,7 +51,7 @@
         {
           "identifier": "title",
           "language": "undefined",
-          "value": "Synthax du Codex",
+          "value": "La Synthaxe du Codex",
           "type": "label"
         }
       ]
@@ -55,23 +59,23 @@
   },
   "namespace": [],
   "metrics": {
-    "classCount": 81,
-    "objectPropertyCount": 9,
+    "classCount": 91,
+    "objectPropertyCount": 11,
     "datatypePropertyCount": 0,
     "individualCount": 0
   },
   "settings": {
     "global": {
-      "zoom": 0.4617404043674469,
+      "zoom": 0.913,
       "translation": [
-        355.18841552734375,
-        220.97686767578125
+        57.002399999999966,
+        39.71549999999996
       ],
       "paused": false
     },
     "gravity": {
-      "classDistance": 100,
-      "datatypeDistance": 10
+      "classDistance": 200,
+      "datatypeDistance": 120
     },
     "filter": {
       "checkBox": [
@@ -126,255 +130,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "5",
-      "type": "owl:Class"
-    },
-    {
-      "id": "20",
-      "type": "owl:Class"
-    },
-    {
-      "id": "28",
-      "type": "owl:Class"
-    },
-    {
-      "id": "1",
-      "type": "owl:Class"
-    },
-    {
-      "id": "55",
-      "type": "owl:Class"
-    },
-    {
-      "id": "58",
-      "type": "owl:Class"
-    },
-    {
-      "id": "39",
-      "type": "owl:Class"
-    },
-    {
-      "id": "60",
-      "type": "owl:Class"
-    },
-    {
-      "id": "61",
-      "type": "owl:Class"
-    },
-    {
-      "id": "62",
-      "type": "owl:Class"
-    },
-    {
-      "id": "64",
-      "type": "owl:Class"
-    },
-    {
-      "id": "65",
-      "type": "owl:Class"
-    },
-    {
-      "id": "66",
-      "type": "owl:Class"
-    },
-    {
-      "id": "67",
-      "type": "owl:Class"
-    },
-    {
-      "id": "68",
-      "type": "owl:Class"
-    },
-    {
-      "id": "7",
-      "type": "owl:Class"
-    },
-    {
-      "id": "76",
-      "type": "owl:Class"
-    },
-    {
-      "id": "77",
-      "type": "owl:Class"
-    },
-    {
-      "id": "56",
-      "type": "owl:Class"
-    },
-    {
-      "id": "59",
-      "type": "owl:Class"
-    },
-    {
-      "id": "13",
-      "type": "owl:Class"
-    },
-    {
-      "id": "34",
-      "type": "owl:Class"
-    },
-    {
-      "id": "35",
-      "type": "owl:Class"
-    },
-    {
-      "id": "36",
-      "type": "owl:Class"
-    },
-    {
-      "id": "37",
-      "type": "owl:Class"
-    },
-    {
-      "id": "97",
-      "type": "owl:Class"
-    },
-    {
-      "id": "63",
-      "type": "owl:Class"
-    },
-    {
-      "id": "104",
-      "type": "owl:Class"
-    },
-    {
-      "id": "110",
-      "type": "owl:Class"
-    },
-    {
-      "id": "89",
-      "type": "owl:Class"
-    },
-    {
-      "id": "111",
-      "type": "owl:Class"
-    },
-    {
-      "id": "92",
-      "type": "owl:Class"
-    },
-    {
-      "id": "112",
-      "type": "owl:Class"
-    },
-    {
-      "id": "115",
-      "type": "owl:Class"
-    },
-    {
-      "id": "94",
-      "type": "owl:Class"
-    },
-    {
-      "id": "96",
-      "type": "owl:Class"
-    },
-    {
-      "id": "90",
-      "type": "owl:Class"
-    },
-    {
-      "id": "15",
-      "type": "owl:Class"
-    },
-    {
-      "id": "79",
-      "type": "owl:Class"
-    },
-    {
-      "id": "22",
-      "type": "owl:Thing"
-    },
-    {
-      "id": "136",
-      "type": "owl:Class"
-    },
-    {
-      "id": "70",
-      "type": "owl:Class"
-    },
-    {
-      "id": "144",
-      "type": "owl:Class"
-    },
-    {
-      "id": "30",
-      "type": "owl:Class"
-    },
-    {
-      "id": "31",
-      "type": "owl:Class"
-    },
-    {
-      "id": "32",
-      "type": "owl:Class"
-    },
-    {
-      "id": "43",
-      "type": "owl:Class"
-    },
-    {
-      "id": "45",
-      "type": "owl:Class"
-    },
-    {
-      "id": "71",
-      "type": "owl:Class"
-    },
-    {
-      "id": "196",
-      "type": "owl:Class"
-    },
-    {
-      "id": "83",
-      "type": "owl:Class"
-    },
-    {
-      "id": "29",
-      "type": "owl:Class"
-    },
-    {
-      "id": "86",
-      "type": "owl:Class"
-    },
-    {
-      "id": "47",
-      "type": "owl:Class"
-    },
-    {
-      "id": "48",
-      "type": "owl:Class"
-    },
-    {
-      "id": "50",
-      "type": "owl:Class"
-    },
-    {
-      "id": "131",
-      "type": "owl:Class"
-    },
-    {
-      "id": "152",
-      "type": "owl:Class"
-    },
-    {
-      "id": "4",
-      "type": "owl:Class"
-    },
-    {
-      "id": "21",
-      "type": "owl:Class"
-    },
-    {
-      "id": "201",
-      "type": "owl:Class"
-    },
-    {
-      "id": "157",
-      "type": "owl:Class"
-    },
-    {
-      "id": "78",
+      "id": "9",
       "type": "owl:Class"
     },
     {
@@ -382,27 +138,15 @@
       "type": "owl:Class"
     },
     {
-      "id": "10",
+      "id": "35",
       "type": "owl:Class"
     },
     {
-      "id": "197",
+      "id": "43",
       "type": "owl:Class"
     },
     {
-      "id": "198",
-      "type": "owl:Class"
-    },
-    {
-      "id": "199",
-      "type": "owl:Class"
-    },
-    {
-      "id": "200",
-      "type": "owl:Class"
-    },
-    {
-      "id": "42",
+      "id": "48",
       "type": "owl:Class"
     },
     {
@@ -410,15 +154,115 @@
       "type": "owl:Class"
     },
     {
-      "id": "216",
+      "id": "89",
       "type": "owl:Class"
     },
     {
-      "id": "73",
+      "id": "79",
       "type": "owl:Class"
     },
     {
-      "id": "183",
+      "id": "82",
+      "type": "owl:Class"
+    },
+    {
+      "id": "56",
+      "type": "owl:Class"
+    },
+    {
+      "id": "85",
+      "type": "owl:Class"
+    },
+    {
+      "id": "88",
+      "type": "owl:Class"
+    },
+    {
+      "id": "96",
+      "type": "owl:Class"
+    },
+    {
+      "id": "98",
+      "type": "owl:Class"
+    },
+    {
+      "id": "99",
+      "type": "owl:Class"
+    },
+    {
+      "id": "100",
+      "type": "owl:Class"
+    },
+    {
+      "id": "101",
+      "type": "owl:Class"
+    },
+    {
+      "id": "102",
+      "type": "owl:Class"
+    },
+    {
+      "id": "11",
+      "type": "owl:Class"
+    },
+    {
+      "id": "111",
+      "type": "owl:Class"
+    },
+    {
+      "id": "118",
+      "type": "owl:Class"
+    },
+    {
+      "id": "126",
+      "type": "owl:Class"
+    },
+    {
+      "id": "93",
+      "type": "owl:Class"
+    },
+    {
+      "id": "95",
+      "type": "owl:Class"
+    },
+    {
+      "id": "18",
+      "type": "owl:Class"
+    },
+    {
+      "id": "31",
+      "type": "owl:Class"
+    },
+    {
+      "id": "52",
+      "type": "owl:Class"
+    },
+    {
+      "id": "53",
+      "type": "owl:Class"
+    },
+    {
+      "id": "54",
+      "type": "owl:Class"
+    },
+    {
+      "id": "28",
+      "type": "owl:Class"
+    },
+    {
+      "id": "152",
+      "type": "owl:Class"
+    },
+    {
+      "id": "97",
+      "type": "owl:Class"
+    },
+    {
+      "id": "178",
+      "type": "owl:Class"
+    },
+    {
+      "id": "180",
       "type": "owl:Class"
     },
     {
@@ -426,7 +270,75 @@
       "type": "owl:Class"
     },
     {
-      "id": "187",
+      "id": "183",
+      "type": "owl:Class"
+    },
+    {
+      "id": "185",
+      "type": "owl:Class"
+    },
+    {
+      "id": "186",
+      "type": "owl:Class"
+    },
+    {
+      "id": "191",
+      "type": "owl:Class"
+    },
+    {
+      "id": "169",
+      "type": "owl:Class"
+    },
+    {
+      "id": "172",
+      "type": "owl:Class"
+    },
+    {
+      "id": "198",
+      "type": "owl:Class"
+    },
+    {
+      "id": "201",
+      "type": "owl:Class"
+    },
+    {
+      "id": "179",
+      "type": "owl:Class"
+    },
+    {
+      "id": "2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "74",
+      "type": "owl:Class"
+    },
+    {
+      "id": "214",
+      "type": "owl:Class"
+    },
+    {
+      "id": "216",
+      "type": "owl:Class"
+    },
+    {
+      "id": "218",
+      "type": "owl:Class"
+    },
+    {
+      "id": "220",
+      "type": "owl:Class"
+    },
+    {
+      "id": "36",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "15",
+      "type": "owl:Class"
+    },
+    {
+      "id": "42",
       "type": "owl:Class"
     },
     {
@@ -434,19 +346,183 @@
       "type": "owl:Class"
     },
     {
-      "id": "138",
+      "id": "148",
       "type": "owl:Class"
     },
     {
-      "id": "81",
+      "id": "104",
       "type": "owl:Class"
     },
     {
-      "id": "9",
+      "id": "132",
       "type": "owl:Class"
     },
     {
-      "id": "87",
+      "id": "45",
+      "type": "owl:Class"
+    },
+    {
+      "id": "46",
+      "type": "owl:Class"
+    },
+    {
+      "id": "47",
+      "type": "owl:Class"
+    },
+    {
+      "id": "64",
+      "type": "owl:Class"
+    },
+    {
+      "id": "67",
+      "type": "owl:Class"
+    },
+    {
+      "id": "105",
+      "type": "owl:Class"
+    },
+    {
+      "id": "69",
+      "type": "owl:Class"
+    },
+    {
+      "id": "110",
+      "type": "owl:Class"
+    },
+    {
+      "id": "44",
+      "type": "owl:Class"
+    },
+    {
+      "id": "75",
+      "type": "owl:Class"
+    },
+    {
+      "id": "71",
+      "type": "owl:Class"
+    },
+    {
+      "id": "72",
+      "type": "owl:Class"
+    },
+    {
+      "id": "77",
+      "type": "owl:Class"
+    },
+    {
+      "id": "224",
+      "type": "owl:Class"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "92",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "181",
+      "type": "owl:Class"
+    },
+    {
+      "id": "34",
+      "type": "owl:Class"
+    },
+    {
+      "id": "145",
+      "type": "owl:Class"
+    },
+    {
+      "id": "109",
+      "type": "owl:Class"
+    },
+    {
+      "id": "199",
+      "type": "owl:Class"
+    },
+    {
+      "id": "208",
+      "type": "owl:Class"
+    },
+    {
+      "id": "127",
+      "type": "owl:Class"
+    },
+    {
+      "id": "51",
+      "type": "owl:Class"
+    },
+    {
+      "id": "202",
+      "type": "owl:Class"
+    },
+    {
+      "id": "122",
+      "type": "owl:Class"
+    },
+    {
+      "id": "116",
+      "type": "owl:Class"
+    },
+    {
+      "id": "119",
+      "type": "owl:Class"
+    },
+    {
+      "id": "120",
+      "type": "owl:Class"
+    },
+    {
+      "id": "63",
+      "type": "owl:Class"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "50",
+      "type": "owl:Class"
+    },
+    {
+      "id": "107",
+      "type": "owl:Class"
+    },
+    {
+      "id": "58",
+      "type": "owl:Class"
+    },
+    {
+      "id": "61",
+      "type": "owl:Class"
+    },
+    {
+      "id": "7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "22",
+      "type": "owl:Class"
+    },
+    {
+      "id": "25",
+      "type": "owl:Class"
+    },
+    {
+      "id": "154",
+      "type": "owl:Class"
+    },
+    {
+      "id": "14",
+      "type": "owl:Class"
+    },
+    {
+      "id": "144",
       "type": "owl:Class"
     }
   ],
@@ -456,15 +532,18 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Ecri5"
+        "IRI-based": "Ecri5",
+        "fr": "texte structuré par différents appareils hiérarchisants, basés sur des discontinuités graphiques, mais sans discontinuités étrangères au système"
       },
       "id": "0",
       "superClasses": [
-        "1"
+        "1",
+        "2",
+        "3"
       ],
       "pos": [
-        151.0102734469304,
-        54.54625484285211
+        -538.260110987191,
+        -1221.917565327786
       ]
     },
     {
@@ -472,15 +551,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Ecri6"
+        "IRI-based": "Ecri6",
+        "fr": "texte structuré par différents appareils hiérarchisants, présentant en outre des discontinuités non fonctionnelles"
       },
-      "id": "5",
+      "id": "9",
       "superClasses": [
-        "1"
+        "1",
+        "3"
       ],
       "pos": [
-        173.80431927021058,
-        121.28098832344646
+        -753.2135822735455,
+        -1125.3904281835842
       ]
     },
     {
@@ -490,13 +571,29 @@
       "label": {
         "IRI-based": "UniProd-M"
       },
-      "id": "20",
+      "id": "33",
       "superClasses": [
-        "21"
+        "34"
       ],
       "pos": [
-        1361.7610899397396,
-        906.9481866471269
+        1771.6430848787072,
+        -45.41018448091559
+      ]
+    },
+    {
+      "iri": "http://Synthax.du.Codex/ontology#ElMeP",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "instances": 0,
+      "label": {
+        "IRI-based": "ElMeP"
+      },
+      "id": "35",
+      "superClasses": [
+        "11"
+      ],
+      "pos": [
+        -1281.440866104676,
+        -71.8083213556014
       ]
     },
     {
@@ -507,17 +604,33 @@
         "IRI-based": "Decroissement"
       },
       "subClasses": [
-        "30",
-        "31",
-        "32"
+        "45",
+        "46",
+        "47"
       ],
-      "id": "28",
+      "id": "43",
       "superClasses": [
-        "29"
+        "44"
       ],
       "pos": [
-        200.15635511808347,
-        1007.7273278753482
+        1833.4662735278678,
+        1761.1901722010198
+      ]
+    },
+    {
+      "iri": "http://Synthax.du.Codex/ontology#ElMain",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "instances": 0,
+      "label": {
+        "IRI-based": "ElMain"
+      },
+      "id": "48",
+      "superClasses": [
+        "2"
+      ],
+      "pos": [
+        17.303769029949017,
+        -1258.3539000235194
       ]
     },
     {
@@ -529,19 +642,36 @@
       },
       "subClasses": [
         "0",
-        "5",
-        "34",
-        "35",
-        "36",
-        "37"
+        "9",
+        "31",
+        "52",
+        "53",
+        "54"
       ],
-      "id": "1",
+      "id": "3",
       "superClasses": [
-        "33"
+        "2",
+        "51"
       ],
       "pos": [
-        422.83516238782966,
-        18.157708767209662
+        -655.189728809021,
+        -767.8170115941662
+      ]
+    },
+    {
+      "iri": "http://Synthax.du.Codex/ontology#ElCah",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "instances": 0,
+      "label": {
+        "IRI-based": "ElCah"
+      },
+      "id": "89",
+      "superClasses": [
+        "56"
+      ],
+      "pos": [
+        900.252451257447,
+        -355.93507242523174
       ]
     },
     {
@@ -549,15 +679,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Cont4"
+        "IRI-based": "Cont4",
+        "fr": "collections"
       },
-      "id": "55",
+      "id": "79",
       "superClasses": [
-        "56"
+        "93",
+        "75"
       ],
       "pos": [
-        414.72093404317496,
-        -281.90951261251973
+        489.3590619889136,
+        -1027.2893775309694
       ]
     },
     {
@@ -565,15 +697,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Cont5"
+        "IRI-based": "Cont5",
+        "fr": "textes subordonnés"
       },
-      "id": "58",
+      "id": "82",
       "superClasses": [
-        "56"
+        "93",
+        "75"
       ],
       "pos": [
-        716.4348739925746,
-        -424.34739209792536
+        520.910615096972,
+        -1113.0301373036827
       ]
     },
     {
@@ -583,13 +717,20 @@
       "label": {
         "IRI-based": "UniCah"
       },
-      "id": "39",
+      "subClasses": [
+        "50",
+        "89",
+        "58",
+        "61",
+        "7"
+      ],
+      "id": "56",
       "superClasses": [
-        "59"
+        "95"
       ],
       "pos": [
-        1428.9928667293266,
-        476.7467648844014
+        687.4208321113683,
+        40.92723628101528
       ]
     },
     {
@@ -597,15 +738,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Cont2"
+        "IRI-based": "Cont2",
+        "fr": "plusieurs textes sans lien"
       },
-      "id": "60",
+      "id": "85",
       "superClasses": [
-        "56"
+        "93",
+        "75"
       ],
       "pos": [
-        528.1113289416772,
-        -410.45064732134404
+        438.55214274190354,
+        -1079.0101705829773
       ]
     },
     {
@@ -613,15 +756,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Cont3"
+        "IRI-based": "Cont3",
+        "fr": "texte unitaire et sous-unités potentiellement autonomes"
       },
-      "id": "61",
+      "id": "88",
       "superClasses": [
-        "56"
+        "93",
+        "75"
       ],
       "pos": [
-        455.72890128812674,
-        -356.0403806984894
+        589.51820038672,
+        -676.1393212117159
       ]
     },
     {
@@ -629,15 +774,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Mep2"
+        "IRI-based": "Mep2",
+        "fr": "types de réglure différentes (chacun utilisé de manière uniforme)"
       },
-      "id": "62",
+      "id": "96",
       "superClasses": [
-        "63"
+        "11",
+        "97"
       ],
       "pos": [
-        1348.7704630969858,
-        -201.2731411827232
+        -1355.1643586705713,
+        218.29280653582572
       ]
     },
     {
@@ -647,13 +794,13 @@
       "label": {
         "IRI-based": "UniProd-C"
       },
-      "id": "64",
+      "id": "98",
       "superClasses": [
-        "21"
+        "34"
       ],
       "pos": [
-        1295.1118783455759,
-        1042.2645789583746
+        1523.3240710321707,
+        503.4582213522109
       ]
     },
     {
@@ -661,15 +808,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Mep3"
+        "IRI-based": "Mep3",
+        "fr": "type de réglure (presque) uniforme, avec variations mineures"
       },
-      "id": "65",
+      "id": "99",
       "superClasses": [
-        "63"
+        "11",
+        "97"
       ],
       "pos": [
-        1227.1903606083747,
-        -325.18122884403886
+        -1356.2213078559134,
+        329.4308690317729
       ]
     },
     {
@@ -677,15 +826,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Mep1"
+        "IRI-based": "Mep1",
+        "fr": "type de réglure uniforme (utilisée de manière uniforme)"
       },
-      "id": "66",
+      "id": "100",
       "superClasses": [
-        "63"
+        "11",
+        "97"
       ],
       "pos": [
-        1365.9081345421653,
-        -120.30453923661449
+        -1321.402035763192,
+        113.3324217600233
       ]
     },
     {
@@ -693,15 +844,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Mep4"
+        "IRI-based": "Mep4",
+        "fr": "types de réglure uniformes, utilisés de manières différentes"
       },
-      "id": "67",
+      "id": "101",
       "superClasses": [
-        "63"
+        "11",
+        "97"
       ],
       "pos": [
-        1302.635998308073,
-        -269.70048632674445
+        -1325.2811403559026,
+        440.58096701788935
       ]
     },
     {
@@ -709,15 +862,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Mep5"
+        "IRI-based": "Mep5",
+        "fr": "types de réglure différents, tous à même utilisation"
       },
-      "id": "68",
+      "id": "102",
       "superClasses": [
-        "63"
+        "11",
+        "97"
       ],
       "pos": [
-        1131.4507089014046,
-        -349.48140712717975
+        -1249.918235214779,
+        550.0475287931501
       ]
     },
     {
@@ -727,13 +882,34 @@
       "label": {
         "IRI-based": "UniMeP"
       },
-      "id": "7",
+      "subClasses": [
+        "96",
+        "99",
+        "100",
+        "35",
+        "101",
+        "102"
+      ],
+      "id": "11",
       "superClasses": [
-        "59"
+        "95"
       ],
       "pos": [
-        1322.176397479682,
-        698.8854479844489
+        -888.7328061172958,
+        150.06877193156933
+      ]
+    },
+    {
+      "iri": "http://Synthax.du.Codex/ontology#Certain",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "instances": 0,
+      "label": {
+        "IRI-based": "Certain"
+      },
+      "id": "111",
+      "pos": [
+        2073.508188131714,
+        -948.5089768171246
       ]
     },
     {
@@ -741,15 +917,20 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "UA1"
+        "IRI-based": "UA1",
+        "fr": "union suivi d'accroissement"
       },
-      "id": "76",
+      "subClasses": [
+        "119",
+        "120"
+      ],
+      "id": "118",
       "superClasses": [
-        "71"
+        "105"
       ],
       "pos": [
-        778.3077854642627,
-        1662.6248006567707
+        2529.2449371326784,
+        1124.994400684625
       ]
     },
     {
@@ -757,15 +938,20 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "MA4"
+        "IRI-based": "MA4",
+        "fr": "palimpsestes"
       },
-      "id": "77",
+      "subClasses": [
+        "116",
+        "47"
+      ],
+      "id": "126",
       "superClasses": [
-        "78"
+        "127"
       ],
       "pos": [
-        171.6979310595275,
-        1262.5867892658234
+        927.4155695194216,
+        2146.446634939929
       ]
     },
     {
@@ -776,19 +962,19 @@
         "IRI-based": "ModeleCont"
       },
       "subClasses": [
+        "74",
         "79",
-        "55",
-        "58",
-        "60",
-        "61"
+        "82",
+        "85",
+        "88"
       ],
-      "id": "56",
+      "id": "93",
       "superClasses": [
-        "33"
+        "51"
       ],
       "pos": [
-        650.729511675006,
-        -179.10777935065477
+        211.53154908764674,
+        -656.4661177566601
       ]
     },
     {
@@ -799,19 +985,19 @@
         "IRI-based": "Discontinuite"
       },
       "subClasses": [
-        "4",
-        "3",
-        "15",
-        "13",
-        "86",
-        "7",
-        "39",
-        "87"
+        "1",
+        "5",
+        "2",
+        "18",
+        "75",
+        "11",
+        "56",
+        "144"
       ],
-      "id": "59",
+      "id": "95",
       "pos": [
-        1158.313725796175,
-        493.3021482195847
+        328.9917511045862,
+        -119.3325359929502
       ]
     },
     {
@@ -821,13 +1007,19 @@
       "label": {
         "IRI-based": "UniRegl"
       },
-      "id": "13",
+      "subClasses": [
+        "71",
+        "72",
+        "145",
+        "77"
+      ],
+      "id": "18",
       "superClasses": [
-        "59"
+        "95"
       ],
       "pos": [
-        1406.6687258812356,
-        588.7256638776939
+        384.7204696459071,
+        684.9733956547395
       ]
     },
     {
@@ -835,15 +1027,18 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Ecri1"
+        "IRI-based": "Ecri1",
+        "fr": "texte non structuré, sans aucune discontinuité graphique"
       },
-      "id": "34",
+      "id": "31",
       "superClasses": [
-        "1"
+        "1",
+        "2",
+        "3"
       ],
       "pos": [
-        169.27982678148595,
-        -81.31607914216696
+        -580.354076079798,
+        -1169.7957627234948
       ]
     },
     {
@@ -851,15 +1046,18 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Ecri2"
+        "IRI-based": "Ecri2",
+        "fr": "texte non structuré, mais avec des discontinuités graphiques"
       },
-      "id": "35",
+      "id": "52",
       "superClasses": [
-        "1"
+        "1",
+        "2",
+        "3"
       ],
       "pos": [
-        272.44035103501403,
-        -195.1992466400234
+        -641.3812765757939,
+        -1131.9571317247946
       ]
     },
     {
@@ -867,15 +1065,18 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Ecri3"
+        "IRI-based": "Ecri3",
+        "fr": "texte structuré par un seul appareil hiérarchisant (simple ou alternant), basé sur des discontinuités graphiques, mais sans discontinuités étrangères au système"
       },
-      "id": "36",
+      "id": "53",
       "superClasses": [
-        "1"
+        "1",
+        "2",
+        "3"
       ],
       "pos": [
-        209.35437330800147,
-        -143.9421022728344
+        -388.85512406601674,
+        -1256.999734347894
       ]
     },
     {
@@ -883,15 +1084,34 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Ecri4"
+        "IRI-based": "Ecri4",
+        "fr": "texte structuré par un seul appareil hiérarchisant, avec présence de discontinuités graphiques non fonctionnelles"
       },
-      "id": "37",
+      "id": "54",
+      "superClasses": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pos": [
+        -468.49153393411956,
+        -1237.1675648795408
+      ]
+    },
+    {
+      "iri": "http://Synthax.du.Codex/ontology#ElEcri",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "instances": 0,
+      "label": {
+        "IRI-based": "ElEcri"
+      },
+      "id": "28",
       "superClasses": [
         "1"
       ],
       "pos": [
-        150.38028981843962,
-        -14.385644266743089
+        -79.29468320971097,
+        -1385.3853809546113
       ]
     },
     {
@@ -901,13 +1121,13 @@
       "label": {
         "IRI-based": "UniProd-MC"
       },
-      "id": "97",
+      "id": "152",
       "superClasses": [
-        "21"
+        "34"
       ],
       "pos": [
-        1340.851332308011,
-        980.3117508013197
+        1346.598576955168,
+        524.1918344043954
       ]
     },
     {
@@ -918,19 +1138,19 @@
         "IRI-based": "ModeleMeP"
       },
       "subClasses": [
-        "62",
-        "65",
-        "66",
-        "67",
-        "68"
+        "96",
+        "99",
+        "100",
+        "101",
+        "102"
       ],
-      "id": "63",
+      "id": "97",
       "superClasses": [
-        "33"
+        "51"
       ],
       "pos": [
-        1108.8476622020742,
-        -95.31791974761427
+        -968.7195144813635,
+        345.6092479485848
       ]
     },
     {
@@ -938,15 +1158,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Mat2"
+        "IRI-based": "Mat2",
+        "fr": "matière bien séparées"
       },
-      "id": "104",
+      "id": "178",
       "superClasses": [
-        "90"
+        "5",
+        "179"
       ],
       "pos": [
-        317.0939413880181,
-        431.87392627195777
+        -690.4011856795561,
+        796.9629220186881
       ]
     },
     {
@@ -954,31 +1176,20 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "MA2"
+        "IRI-based": "MA2",
+        "fr": "mutilation d'un codex pour en constituer un autre"
       },
-      "id": "110",
+      "subClasses": [
+        "181",
+        "47"
+      ],
+      "id": "180",
       "superClasses": [
-        "78"
+        "127"
       ],
       "pos": [
-        256.4547048873642,
-        1490.8222061940173
-      ]
-    },
-    {
-      "iri": "http://Synthax.du.Codex/ontology#Mat3",
-      "baseIri": "http://Synthax.du.Codex/ontology",
-      "instances": 0,
-      "label": {
-        "IRI-based": "Mat3"
-      },
-      "id": "89",
-      "superClasses": [
-        "90"
-      ],
-      "pos": [
-        245.76903510394328,
-        300.4687049076026
+        897.580065402944,
+        2271.8687659769375
       ]
     },
     {
@@ -986,15 +1197,38 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "MA3"
+        "IRI-based": "MA3",
+        "fr": "matériaux de rempoi à usage accessoire"
       },
-      "id": "111",
+      "subClasses": [
+        "116",
+        "47"
+      ],
+      "id": "182",
       "superClasses": [
-        "78"
+        "127"
       ],
       "pos": [
-        409.31575668246614,
-        1545.0432198526807
+        899.256617090983,
+        2029.6589260804542
+      ]
+    },
+    {
+      "iri": "http://Synthax.du.Codex/ontology#Mat3",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "instances": 0,
+      "label": {
+        "IRI-based": "Mat3",
+        "fr": "matière mélangées selon un critère discernable"
+      },
+      "id": "183",
+      "superClasses": [
+        "5",
+        "179"
+      ],
+      "pos": [
+        -516.7481443544323,
+        1266.5925443514152
       ]
     },
     {
@@ -1002,15 +1236,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Mat1"
+        "IRI-based": "Mat1",
+        "fr": "matière parfaitement uniforme"
       },
-      "id": "92",
+      "id": "185",
       "superClasses": [
-        "90"
+        "5",
+        "179"
       ],
       "pos": [
-        398.4394288783529,
-        486.61365170426916
+        -447.70084475475363,
+        1221.2528460620758
       ]
     },
     {
@@ -1018,15 +1254,21 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "MA1"
+        "IRI-based": "MA1",
+        "fr": "mutilation d'un codex pour en accoroître un autre"
       },
-      "id": "112",
+      "subClasses": [
+        "119",
+        "46",
+        "47"
+      ],
+      "id": "186",
       "superClasses": [
-        "78"
+        "127"
       ],
       "pos": [
-        176.01180616713995,
-        1377.0360570921914
+        1690.866132023841,
+        1711.8780535928854
       ]
     },
     {
@@ -1036,13 +1278,13 @@
       "label": {
         "IRI-based": "ElMat"
       },
-      "id": "115",
+      "id": "191",
       "superClasses": [
-        "3"
+        "5"
       ],
       "pos": [
-        1705.0191787097951,
-        651.8526913066578
+        -712.1529749426882,
+        661.9660045891155
       ]
     },
     {
@@ -1050,15 +1292,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Mat4"
+        "IRI-based": "Mat4",
+        "fr": "matières regroupables selon plusieurs critères"
       },
-      "id": "94",
+      "id": "169",
       "superClasses": [
-        "90"
+        "5",
+        "179"
       ],
       "pos": [
-        251.15107914665515,
-        232.6648479097216
+        -800.4134574187769,
+        757.3545069207861
       ]
     },
     {
@@ -1066,15 +1310,51 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Mat5"
+        "IRI-based": "Mat5",
+        "fr": "matières mélangées au hasard"
       },
-      "id": "96",
+      "id": "172",
       "superClasses": [
-        "90"
+        "5",
+        "179"
       ],
       "pos": [
-        267.920258552791,
-        366.531993014877
+        -481.1562467209139,
+        1181.4210006119272
+      ]
+    },
+    {
+      "instances": 0,
+      "union": [
+        "199",
+        "111"
+      ],
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "id": "198",
+      "pos": [
+        1759.3235537744783,
+        -683.6336805364597
+      ]
+    },
+    {
+      "instances": 0,
+      "union": [
+        "202",
+        "14",
+        "34",
+        "95"
+      ],
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "id": "201",
+      "pos": [
+        1358.866949743466,
+        -164.10750939300357
       ]
     },
     {
@@ -1085,19 +1365,19 @@
         "IRI-based": "ModeleMat"
       },
       "subClasses": [
-        "104",
-        "89",
-        "92",
-        "94",
-        "96"
+        "178",
+        "183",
+        "185",
+        "169",
+        "172"
       ],
-      "id": "90",
+      "id": "179",
       "superClasses": [
-        "33"
+        "51"
       ],
       "pos": [
-        510.89754564959975,
-        260.2854733416916
+        -781.7479963906184,
+        1006.0095673880545
       ]
     },
     {
@@ -1107,13 +1387,24 @@
       "label": {
         "IRI-based": "UniMain"
       },
-      "id": "15",
+      "subClasses": [
+        "0",
+        "22",
+        "25",
+        "48",
+        "31",
+        "52",
+        "53",
+        "3",
+        "54"
+      ],
+      "id": "2",
       "superClasses": [
-        "59"
+        "95"
       ],
       "pos": [
-        1238.0663979319315,
-        729.1176212148046
+        -216.6959106288835,
+        -845.3224248610235
       ]
     },
     {
@@ -1121,27 +1412,125 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Cont1"
+        "IRI-based": "Cont1",
+        "fr": "texte unitaire"
       },
-      "id": "79",
+      "id": "74",
       "superClasses": [
-        "56"
+        "93",
+        "75"
       ],
       "pos": [
-        620.7707315812753,
-        -435.7181867367292
+        498.4632524268103,
+        -934.5794530028431
+      ]
+    },
+    {
+      "instances": 0,
+      "union": [
+        "34",
+        "95"
+      ],
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "id": "214",
+      "pos": [
+        1011.0706891986687,
+        -220.73610083629973
+      ]
+    },
+    {
+      "instances": 0,
+      "union": [
+        "202",
+        "34"
+      ],
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "id": "216",
+      "pos": [
+        1480.102650346891,
+        -343.8528305607676
+      ]
+    },
+    {
+      "instances": 0,
+      "union": [
+        "34",
+        "95"
+      ],
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "id": "218",
+      "pos": [
+        996.6141298085792,
+        -123.71966191702275
+      ]
+    },
+    {
+      "instances": 0,
+      "union": [
+        "202",
+        "34"
+      ],
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "id": "220",
+      "pos": [
+        1484.464034727934,
+        -262.1351731907022
       ]
     },
     {
       "iri": "http://www.w3.org/2002/07/owl#Thing",
       "baseIri": "http://owl2vowl.de",
-      "id": "22",
+      "id": "36",
       "label": {
         "undefined": "Thing"
       },
       "pos": [
-        -271.23348737732533,
-        1057.9208402628135
+        3245.949279007406,
+        581.0996578915967
+      ]
+    },
+    {
+      "instances": 0,
+      "union": [
+        "202",
+        "34"
+      ],
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "id": "15",
+      "pos": [
+        1851.6042795396565,
+        172.9509292133986
+      ]
+    },
+    {
+      "instances": 0,
+      "union": [
+        "202",
+        "34"
+      ],
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "id": "42",
+      "pos": [
+        1917.8676994995915,
+        189.23007412124824
       ]
     },
     {
@@ -1152,16 +1541,32 @@
         "IRI-based": "ModeleMain"
       },
       "subClasses": [
-        "137",
-        "138"
+        "22",
+        "25"
       ],
-      "id": "136",
+      "id": "137",
       "superClasses": [
-        "33"
+        "51"
       ],
       "pos": [
-        902.7625075848598,
-        -154.52750897859846
+        -682.7018889330287,
+        -232.08310025174828
+      ]
+    },
+    {
+      "iri": "http://Synthax.du.Codex/ontology#ElMarq",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "instances": 0,
+      "label": {
+        "IRI-based": "ElMarq"
+      },
+      "id": "148",
+      "superClasses": [
+        "144"
+      ],
+      "pos": [
+        -27.226541803071793,
+        833.4862549923741
       ]
     },
     {
@@ -1172,17 +1577,17 @@
         "IRI-based": "Remplacement"
       },
       "subClasses": [
-        "43",
-        "45",
-        "42"
+        "64",
+        "67",
+        "63"
       ],
-      "id": "70",
+      "id": "104",
       "superClasses": [
-        "81"
+        "154"
       ],
       "pos": [
-        904.1254903083533,
-        1364.9428486882325
+        1931.3238504495453,
+        2188.722870772007
       ]
     },
     {
@@ -1193,17 +1598,17 @@
         "IRI-based": "ModeleRegl"
       },
       "subClasses": [
-        "47",
-        "48",
-        "50"
+        "71",
+        "72",
+        "77"
       ],
-      "id": "144",
+      "id": "132",
       "superClasses": [
-        "33"
+        "51"
       ],
       "pos": [
-        748.4995809009733,
-        383.0072385077895
+        -87.6738163541164,
+        763.0083310435599
       ]
     },
     {
@@ -1211,15 +1616,16 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "D1"
+        "IRI-based": "D1",
+        "fr": "destruction totale"
       },
-      "id": "30",
+      "id": "45",
       "superClasses": [
-        "28"
+        "43"
       ],
       "pos": [
-        -47.535028702302014,
-        1036.3302239950278
+        2208.4878994247965,
+        2014.7039568409896
       ]
     },
     {
@@ -1227,15 +1633,18 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "D3"
+        "IRI-based": "D3",
+        "fr": "division simple"
       },
-      "id": "31",
+      "id": "46",
       "superClasses": [
-        "28"
+        "43",
+        "186",
+        "110"
       ],
       "pos": [
-        -0.3717511118550919,
-        1150.0864193946927
+        2145.5926199229957,
+        1587.5765917967535
       ]
     },
     {
@@ -1243,15 +1652,23 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "D2"
+        "IRI-based": "D2",
+        "fr": "destruction partielle"
       },
-      "id": "32",
+      "id": "47",
       "superClasses": [
-        "28"
+        "64",
+        "67",
+        "126",
+        "180",
+        "182",
+        "43",
+        "63",
+        "186"
       ],
       "pos": [
-        -40.72774221059017,
-        937.3921597840963
+        1314.782107544884,
+        2141.4020534205747
       ]
     },
     {
@@ -1259,15 +1676,20 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "R3"
+        "IRI-based": "R3",
+        "fr": "superposition de matière"
       },
-      "id": "43",
+      "subClasses": [
+        "116",
+        "47"
+      ],
+      "id": "64",
       "superClasses": [
-        "70"
+        "104"
       ],
       "pos": [
-        1156.0892265736857,
-        1394.7555270754606
+        1615.844005013545,
+        2206.2460212176657
       ]
     },
     {
@@ -1275,15 +1697,20 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "R2"
+        "IRI-based": "R2",
+        "fr": "suppression et rajout de contenu"
       },
-      "id": "45",
+      "subClasses": [
+        "122",
+        "47"
+      ],
+      "id": "67",
       "superClasses": [
-        "70"
+        "104"
       ],
       "pos": [
-        1028.2711042869855,
-        1575.792685411163
+        1639.2993098800105,
+        2465.5674110548202
       ]
     },
     {
@@ -1294,15 +1721,15 @@
         "IRI-based": "UnionAjout"
       },
       "subClasses": [
-        "76"
+        "118"
       ],
-      "id": "71",
+      "id": "105",
       "superClasses": [
-        "81"
+        "154"
       ],
       "pos": [
-        715.155185164751,
-        1435.3454533753904
+        2224.5965499788526,
+        1286.9774620008557
       ]
     },
     {
@@ -1313,18 +1740,18 @@
         "IRI-based": "Accroissement"
       },
       "subClasses": [
-        "197",
-        "198",
-        "199",
-        "200"
+        "122",
+        "116",
+        "119",
+        "120"
       ],
-      "id": "196",
+      "id": "69",
       "superClasses": [
-        "29"
+        "44"
       ],
       "pos": [
-        194.5210869125105,
-        788.8653862533394
+        1741.8262485724736,
+        1564.5368784393206
       ]
     },
     {
@@ -1335,15 +1762,16 @@
         "IRI-based": "Permutation"
       },
       "subClasses": [
-        "201"
+        "109",
+        "46"
       ],
-      "id": "83",
+      "id": "110",
       "superClasses": [
-        "81"
+        "154"
       ],
       "pos": [
-        927.2369046015032,
-        1217.2542231781958
+        2400.5999905967974,
+        1701.4910635811882
       ]
     },
     {
@@ -1354,16 +1782,16 @@
         "IRI-based": "Simple"
       },
       "subClasses": [
-        "28",
-        "196"
+        "43",
+        "69"
       ],
-      "id": "29",
+      "id": "44",
       "superClasses": [
-        "9"
+        "14"
       ],
       "pos": [
-        482.302898432423,
-        975.1070679970802
+        1812.4999022532772,
+        1174.3241657229128
       ]
     },
     {
@@ -1373,13 +1801,21 @@
       "label": {
         "IRI-based": "UniCont"
       },
-      "id": "86",
+      "subClasses": [
+        "74",
+        "79",
+        "82",
+        "85",
+        "88",
+        "92"
+      ],
+      "id": "75",
       "superClasses": [
-        "59"
+        "95"
       ],
       "pos": [
-        1410.4616952703102,
-        404.9609482451117
+        811.4666325307927,
+        -852.783400906086
       ]
     },
     {
@@ -1387,15 +1823,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Regl1"
+        "IRI-based": "Regl1",
+        "fr": "réglure uniforme (technique, système, méthode)"
       },
-      "id": "47",
+      "id": "71",
       "superClasses": [
-        "144"
+        "132",
+        "18"
       ],
       "pos": [
-        755.8279121284587,
-        622.434963444406
+        163.34439603291992,
+        1126.0442363230259
       ]
     },
     {
@@ -1403,15 +1841,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Regl2"
+        "IRI-based": "Regl2",
+        "fr": "technique différentes"
       },
-      "id": "48",
+      "id": "72",
       "superClasses": [
-        "144"
+        "132",
+        "18"
       ],
       "pos": [
-        556.7889416353614,
-        538.8965429689198
+        189.54152111052522,
+        1063.8375956688278
       ]
     },
     {
@@ -1419,15 +1859,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Regl3"
+        "IRI-based": "Regl3",
+        "fr": "technique uniforme, mais autres discontinuités"
       },
-      "id": "50",
+      "id": "77",
       "superClasses": [
-        "144"
+        "132",
+        "18"
       ],
       "pos": [
-        631.5868164856486,
-        602.3894932048024
+        271.357238337923,
+        1079.5021930169664
       ]
     },
     {
@@ -1437,13 +1879,13 @@
       "label": {
         "IRI-based": "UniProd-C-MC"
       },
-      "id": "131",
+      "id": "224",
       "superClasses": [
-        "21"
+        "34"
       ],
       "pos": [
-        1224.6096138739533,
-        1086.7582433499995
+        1727.3645644170185,
+        320.04708781887894
       ]
     },
     {
@@ -1454,18 +1896,34 @@
         "IRI-based": "ModeleCah"
       },
       "subClasses": [
-        "216",
-        "183",
-        "182",
-        "187"
+        "50",
+        "58",
+        "61",
+        "7"
       ],
-      "id": "152",
+      "id": "8",
       "superClasses": [
-        "33"
+        "51"
       ],
       "pos": [
-        1201.9971505358787,
-        120.6915998251515
+        79.05378476596572,
+        338.92265961637736
+      ]
+    },
+    {
+      "iri": "http://Synthax.du.Codex/ontology#ElCont",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "instances": 0,
+      "label": {
+        "IRI-based": "ElCont"
+      },
+      "id": "92",
+      "superClasses": [
+        "75"
+      ],
+      "pos": [
+        1052.6799034322503,
+        -1235.0721588076865
       ]
     },
     {
@@ -1475,13 +1933,40 @@
       "label": {
         "IRI-based": "UniEcri"
       },
-      "id": "4",
+      "subClasses": [
+        "0",
+        "9",
+        "22",
+        "25",
+        "28",
+        "31",
+        "52",
+        "53",
+        "54"
+      ],
+      "id": "1",
       "superClasses": [
-        "59"
+        "95"
       ],
       "pos": [
-        1376.9772041443441,
-        654.6957976434667
+        -214.68937013505368,
+        -918.2556444593465
+      ]
+    },
+    {
+      "iri": "http://Synthax.du.Codex/ontology#creation",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "instances": 0,
+      "label": {
+        "IRI-based": "creation"
+      },
+      "id": "181",
+      "superClasses": [
+        "180"
+      ],
+      "pos": [
+        574.3244140916222,
+        2525.6548950128645
       ]
     },
     {
@@ -1492,15 +1977,31 @@
         "IRI-based": "UniProd"
       },
       "subClasses": [
-        "64",
-        "131",
-        "20",
-        "97"
+        "98",
+        "224",
+        "33",
+        "152"
       ],
-      "id": "21",
+      "id": "34",
       "pos": [
-        1098.9084575682741,
-        862.4998368456768
+        1362.4818460879696,
+        124.93492531210521
+      ]
+    },
+    {
+      "iri": "http://Synthax.du.Codex/ontology#ElRegl",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "instances": 0,
+      "label": {
+        "IRI-based": "ElRegl"
+      },
+      "id": "145",
+      "superClasses": [
+        "18"
+      ],
+      "pos": [
+        739.5886788632279,
+        875.6417783159786
       ]
     },
     {
@@ -1508,15 +2009,32 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "P1"
+        "IRI-based": "P1",
+        "fr": "permutation de folios ou de cahiers"
       },
-      "id": "201",
+      "subClasses": [
+        "119"
+      ],
+      "id": "109",
       "superClasses": [
-        "83"
+        "110"
       ],
       "pos": [
-        1174.177331867104,
-        1266.857804387106
+        2672.9051201141233,
+        1463.5675835857135
+      ]
+    },
+    {
+      "iri": "http://Synthax.du.Codex/ontology#Hypothetique",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "instances": 0,
+      "label": {
+        "IRI-based": "Hypothetique"
+      },
+      "id": "199",
+      "pos": [
+        1915.62162839213,
+        -1063.4124585253187
       ]
     },
     {
@@ -1526,13 +2044,13 @@
       "label": {
         "IRI-based": "ModeleMarq"
       },
-      "id": "157",
+      "id": "208",
       "superClasses": [
-        "33"
+        "51"
       ],
       "pos": [
-        765.4083619638143,
-        -96.44256180637592
+        -690.4548145285121,
+        339.26496465767104
       ]
     },
     {
@@ -1543,18 +2061,18 @@
         "IRI-based": "MutilationAjout"
       },
       "subClasses": [
-        "77",
-        "110",
-        "111",
-        "112"
+        "126",
+        "180",
+        "182",
+        "186"
       ],
-      "id": "78",
+      "id": "127",
       "superClasses": [
-        "81"
+        "154"
       ],
       "pos": [
-        411.84670824056604,
-        1302.8951571625216
+        1234.1018227107875,
+        1829.8552601507913
       ]
     },
     {
@@ -1565,19 +2083,19 @@
         "IRI-based": "Modele"
       },
       "subClasses": [
-        "56",
-        "144",
-        "90",
-        "136",
-        "152",
-        "63",
-        "157",
-        "1"
+        "93",
+        "132",
+        "179",
+        "137",
+        "8",
+        "97",
+        "208",
+        "3"
       ],
-      "id": "33",
+      "id": "51",
       "pos": [
-        842.5954080279461,
-        128.039515433781
+        -367.75484053681487,
+        105.9198956066735
       ]
     },
     {
@@ -1587,10 +2105,10 @@
       "label": {
         "IRI-based": "UniCirc"
       },
-      "id": "10",
+      "id": "202",
       "pos": [
-        890.1687476470781,
-        746.7174087649269
+        1880.116478067033,
+        -237.2575946436351
       ]
     },
     {
@@ -1598,15 +2116,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "A2"
+        "IRI-based": "A2",
+        "fr": "ajout de contenu sans support matériel"
       },
-      "id": "197",
+      "id": "122",
       "superClasses": [
-        "196"
+        "67",
+        "69"
       ],
       "pos": [
-        -52.616345265677325,
-        697.9632870738633
+        1747.3253185819106,
+        2025.5372514889616
       ]
     },
     {
@@ -1614,15 +2134,21 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "A1"
+        "IRI-based": "A1",
+        "fr": "ajout de support matériel avec contenu"
       },
-      "id": "198",
+      "id": "116",
       "superClasses": [
-        "196"
+        "107",
+        "64",
+        "126",
+        "182",
+        "63",
+        "69"
       ],
       "pos": [
-        50.77587502338661,
-        575.39741737805
+        1327.024801353893,
+        2006.1497351408016
       ]
     },
     {
@@ -1630,15 +2156,19 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "A4"
+        "IRI-based": "A4",
+        "fr": "union de codex"
       },
-      "id": "199",
+      "id": "119",
       "superClasses": [
-        "196"
+        "118",
+        "109",
+        "186",
+        "69"
       ],
       "pos": [
-        -14.324156373621392,
-        627.4756827139745
+        2228.6596967773544,
+        1459.6374570081182
       ]
     },
     {
@@ -1646,15 +2176,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "A3"
+        "IRI-based": "A3",
+        "fr": "ajout de contenu et de support matériel avec contenu"
       },
-      "id": "200",
+      "id": "120",
       "superClasses": [
-        "196"
+        "118",
+        "69"
       ],
       "pos": [
-        -62.8711186970032,
-        782.5585634871878
+        2128.0784077205026,
+        1206.676066684206
       ]
     },
     {
@@ -1662,15 +2194,21 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "R1"
+        "IRI-based": "R1",
+        "fr": "suppression et rajout de matière (avec ou sans contenu)"
       },
-      "id": "42",
+      "subClasses": [
+        "116",
+        "47"
+      ],
+      "id": "63",
       "superClasses": [
-        "70"
+        "104",
+        "107"
       ],
       "pos": [
-        1125.436489679778,
-        1486.5890588503153
+        1524.7479773208295,
+        2437.261919993508
       ]
     },
     {
@@ -1681,15 +2219,20 @@
         "IRI-based": "UniMat"
       },
       "subClasses": [
-        "115"
+        "178",
+        "183",
+        "185",
+        "191",
+        "169",
+        "172"
       ],
-      "id": "3",
+      "id": "5",
       "superClasses": [
-        "59"
+        "95"
       ],
       "pos": [
-        1470.0015190630454,
-        562.2679411458181
+        -321.69206591288656,
+        745.3865760095966
       ]
     },
     {
@@ -1697,15 +2240,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Cah1"
+        "IRI-based": "Cah1",
+        "fr": "série de structure uniforme"
       },
-      "id": "216",
+      "id": "50",
       "superClasses": [
-        "152"
+        "8",
+        "56"
       ],
       "pos": [
-        1450.8428515719193,
-        207.47846278812057
+        388.093321622005,
+        175.38951084276664
       ]
     },
     {
@@ -1715,13 +2260,17 @@
       "label": {
         "IRI-based": "Restauration"
       },
-      "id": "73",
+      "subClasses": [
+        "116",
+        "63"
+      ],
+      "id": "107",
       "superClasses": [
-        "81"
+        "154"
       ],
       "pos": [
-        586.9571187325848,
-        1415.9649039045266
+        1755.0577686455283,
+        2065.785767467889
       ]
     },
     {
@@ -1729,15 +2278,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Cah3"
+        "IRI-based": "Cah3",
+        "fr": "série récurrente de cahiers de structures différentes"
       },
-      "id": "183",
+      "id": "58",
       "superClasses": [
-        "152"
+        "8",
+        "56"
       ],
       "pos": [
-        1470.134128248005,
-        138.1003625073699
+        531.4361248230687,
+        434.9477202723482
       ]
     },
     {
@@ -1745,15 +2296,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Cah2"
+        "IRI-based": "Cah2",
+        "fr": "séries homogènes de cahiers de structure différentes"
       },
-      "id": "182",
+      "id": "61",
       "superClasses": [
-        "152"
+        "8",
+        "56"
       ],
       "pos": [
-        1433.6875105925913,
-        -1.0150774862259966
+        488.6951538956753,
+        373.73320979107575
       ]
     },
     {
@@ -1761,15 +2314,17 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Cah4"
+        "IRI-based": "Cah4",
+        "fr": "série à changements aléatoires"
       },
-      "id": "187",
+      "id": "7",
       "superClasses": [
-        "152"
+        "8",
+        "56"
       ],
       "pos": [
-        1464.2363724580225,
-        67.43697138608051
+        287.17179236965086,
+        12.547579800804218
       ]
     },
     {
@@ -1777,15 +2332,18 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Main1"
+        "IRI-based": "Main1",
+        "fr": "plusieurs mains responsables chacune de l'intégralité du système"
       },
-      "id": "137",
+      "id": "22",
       "superClasses": [
-        "136"
+        "1",
+        "2",
+        "137"
       ],
       "pos": [
-        985.7309751934137,
-        -394.22309945963684
+        -469.5556106078862,
+        -555.8860228059195
       ]
     },
     {
@@ -1793,15 +2351,18 @@
       "baseIri": "http://Synthax.du.Codex/ontology",
       "instances": 0,
       "label": {
-        "IRI-based": "Main2"
+        "IRI-based": "Main2",
+        "fr": "plusieurs mains spécialisées dans un ou plusieurs éléments du même système"
       },
-      "id": "138",
+      "id": "25",
       "superClasses": [
-        "136"
+        "1",
+        "2",
+        "137"
       ],
       "pos": [
-        887.1078389029367,
-        -407.51216080574255
+        -590.9817003348244,
+        -629.9321536671472
       ]
     },
     {
@@ -1812,19 +2373,19 @@
         "IRI-based": "Multiples"
       },
       "subClasses": [
-        "70",
-        "73",
-        "78",
-        "71",
-        "83"
+        "104",
+        "107",
+        "127",
+        "105",
+        "110"
       ],
-      "id": "81",
+      "id": "154",
       "superClasses": [
-        "9"
+        "14"
       ],
       "pos": [
-        663.4722211982846,
-        1183.9819374026486
+        1836.604574572254,
+        1535.567226192451
       ]
     },
     {
@@ -1835,13 +2396,13 @@
         "IRI-based": "Transformation"
       },
       "subClasses": [
-        "29",
-        "81"
+        "44",
+        "154"
       ],
-      "id": "9",
+      "id": "14",
       "pos": [
-        818.9789497262906,
-        964.3507144932255
+        1720.9992586395758,
+        610.9490685049174
       ]
     },
     {
@@ -1851,207 +2412,206 @@
       "label": {
         "IRI-based": "UniMarq"
       },
-      "id": "87",
+      "subClasses": [
+        "148"
+      ],
+      "id": "144",
       "superClasses": [
-        "59"
+        "95"
       ],
       "pos": [
-        1352.2001139216445,
-        336.07228945781685
+        149.7071117045234,
+        426.7226146741071
       ]
     }
   ],
   "property": [
     {
-      "id": "2",
+      "id": "4",
       "type": "owl:disjointWith"
     },
     {
       "id": "6",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
-      "id": "8",
-      "type": "owl:objectProperty"
+      "id": "10",
+      "type": "owl:disjointWith"
     },
     {
       "id": "12",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
-      "id": "14",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "16",
-      "type": "owl:disjointWith"
+      "id": "13",
+      "type": "owl:objectProperty"
     },
     {
       "id": "17",
       "type": "owl:disjointWith"
     },
     {
-      "id": "18",
-      "type": "owl:disjointWith"
-    },
-    {
       "id": "19",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "20",
       "type": "owl:disjointWith"
     },
     {
-      "id": "11",
+      "id": "21",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "23",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "24",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "26",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "27",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "29",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "30",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "32",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "16",
       "type": "owl:objectProperty"
     },
     {
-      "id": "25",
+      "id": "39",
       "type": "owl:objectProperty"
-    },
-    {
-      "id": "38",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "40",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "41",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "44",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "46",
-      "type": "owl:disjointWith"
     },
     {
       "id": "49",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
-      "id": "51",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "52",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "53",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "54",
+      "id": "55",
       "type": "owl:disjointWith"
     },
     {
       "id": "57",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "59",
       "type": "owl:disjointWith"
     },
     {
-      "id": "69",
+      "id": "60",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "62",
       "type": "owl:disjointWith"
     },
     {
-      "id": "72",
+      "id": "65",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "66",
       "type": "owl:disjointWith"
     },
     {
-      "id": "74",
+      "id": "68",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "70",
       "type": "owl:disjointWith"
     },
     {
-      "id": "75",
+      "id": "73",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "76",
       "type": "owl:disjointWith"
+    },
+    {
+      "id": "78",
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "80",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "81",
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "82",
-      "type": "rdfs:SubClassOf"
+      "id": "83",
+      "type": "owl:disjointWith"
     },
     {
       "id": "84",
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "85",
+      "id": "86",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "87",
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "88",
-      "type": "rdfs:SubClassOf"
+      "id": "90",
+      "type": "owl:disjointWith"
     },
     {
       "id": "91",
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "93",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "95",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "98",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "99",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "100",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "101",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "102",
-      "type": "rdfs:SubClassOf"
+      "id": "94",
+      "type": "owl:disjointWith"
     },
     {
       "id": "103",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "105",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:disjointWith"
     },
     {
       "id": "106",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "107",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:disjointWith"
     },
     {
       "id": "108",
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "109",
-      "type": "rdfs:SubClassOf"
+      "id": "112",
+      "type": "owl:disjointWith"
     },
     {
       "id": "113",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:disjointWith"
     },
     {
       "id": "114",
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "116",
+      "id": "115",
       "type": "rdfs:SubClassOf"
     },
     {
@@ -2059,23 +2619,7 @@
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "118",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "119",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "120",
-      "type": "rdfs:SubClassOf"
-    },
-    {
       "id": "121",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "122",
       "type": "rdfs:SubClassOf"
     },
     {
@@ -2091,32 +2635,24 @@
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "126",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "127",
-      "type": "rdfs:SubClassOf"
-    },
-    {
       "id": "128",
       "type": "rdfs:SubClassOf"
     },
     {
       "id": "129",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "130",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
-      "id": "132",
-      "type": "owl:disjointWith"
+      "id": "131",
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "133",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "134",
@@ -2127,47 +2663,39 @@
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "139",
-      "type": "owl:objectProperty"
+      "id": "136",
+      "type": "rdfs:SubClassOf"
     },
     {
-      "id": "24",
-      "type": "owl:objectProperty"
+      "id": "138",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "139",
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "140",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "141",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "142",
-      "type": "owl:objectProperty"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "143",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "145",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "27",
-      "type": "owl:objectProperty"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "146",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "147",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "148",
       "type": "rdfs:SubClassOf"
     },
     {
@@ -2176,7 +2704,7 @@
     },
     {
       "id": "150",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "151",
@@ -2184,23 +2712,23 @@
     },
     {
       "id": "153",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "154",
       "type": "rdfs:SubClassOf"
     },
     {
       "id": "155",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "156",
       "type": "rdfs:SubClassOf"
     },
     {
+      "id": "157",
+      "type": "rdfs:SubClassOf"
+    },
+    {
       "id": "158",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "159",
@@ -2208,7 +2736,7 @@
     },
     {
       "id": "160",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "161",
@@ -2216,7 +2744,7 @@
     },
     {
       "id": "162",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "163",
@@ -2224,7 +2752,7 @@
     },
     {
       "id": "164",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "165",
@@ -2232,7 +2760,7 @@
     },
     {
       "id": "166",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "167",
@@ -2243,24 +2771,16 @@
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "169",
-      "type": "owl:disjointWith"
-    },
-    {
       "id": "170",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "171",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "172",
       "type": "rdfs:SubClassOf"
     },
     {
       "id": "173",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "174",
@@ -2268,7 +2788,7 @@
     },
     {
       "id": "175",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "176",
@@ -2276,35 +2796,15 @@
     },
     {
       "id": "177",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "178",
       "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "179",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "180",
-      "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "181",
-      "type": "owl:disjointWith"
     },
     {
       "id": "184",
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "185",
+      "id": "187",
       "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "186",
-      "type": "owl:disjointWith"
     },
     {
       "id": "188",
@@ -2312,15 +2812,11 @@
     },
     {
       "id": "189",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "190",
       "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "191",
-      "type": "owl:disjointWith"
     },
     {
       "id": "192",
@@ -2332,15 +2828,23 @@
     },
     {
       "id": "194",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "195",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
-      "id": "202",
-      "type": "owl:disjointWith"
+      "id": "196",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "197",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "200",
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "203",
@@ -2348,7 +2852,7 @@
     },
     {
       "id": "204",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "205",
@@ -2356,15 +2860,11 @@
     },
     {
       "id": "206",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "207",
       "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "208",
-      "type": "owl:disjointWith"
     },
     {
       "id": "209",
@@ -2372,7 +2872,7 @@
     },
     {
       "id": "210",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "211",
@@ -2380,15 +2880,11 @@
     },
     {
       "id": "212",
-      "type": "owl:disjointWith"
+      "type": "owl:objectProperty"
     },
     {
       "id": "213",
       "type": "rdfs:SubClassOf"
-    },
-    {
-      "id": "214",
-      "type": "owl:disjointWith"
     },
     {
       "id": "215",
@@ -2396,10 +2892,6 @@
     },
     {
       "id": "217",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "218",
       "type": "rdfs:SubClassOf"
     },
     {
@@ -2407,24 +2899,16 @@
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "220",
-      "type": "rdfs:SubClassOf"
-    },
-    {
       "id": "221",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "222",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:disjointWith"
     },
     {
       "id": "223",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "224",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "225",
@@ -2432,23 +2916,23 @@
     },
     {
       "id": "226",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "227",
-      "type": "rdfs:SubClassOf"
+      "type": "owl:disjointWith"
     },
     {
       "id": "228",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "229",
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "230",
+      "id": "229",
       "type": "owl:disjointWith"
+    },
+    {
+      "id": "230",
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "231",
@@ -2456,15 +2940,15 @@
     },
     {
       "id": "232",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "233",
       "type": "rdfs:SubClassOf"
     },
     {
-      "id": "234",
-      "type": "owl:disjointWith"
+      "id": "233",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "38",
+      "type": "owl:objectProperty"
     },
     {
       "id": "235",
@@ -2487,16 +2971,24 @@
       "type": "rdfs:SubClassOf"
     },
     {
+      "id": "234",
+      "type": "owl:objectProperty"
+    },
+    {
       "id": "240",
       "type": "owl:disjointWith"
     },
     {
       "id": "241",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "242",
       "type": "owl:disjointWith"
+    },
+    {
+      "id": "41",
+      "type": "owl:objectProperty"
     },
     {
       "id": "243",
@@ -2508,11 +3000,11 @@
     },
     {
       "id": "245",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "246",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "247",
@@ -2520,7 +3012,7 @@
     },
     {
       "id": "248",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "249",
@@ -2528,7 +3020,7 @@
     },
     {
       "id": "250",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "251",
@@ -2536,7 +3028,7 @@
     },
     {
       "id": "252",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "253",
@@ -2544,15 +3036,7 @@
     },
     {
       "id": "254",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "26",
-      "type": "owl:objectProperty"
-    },
-    {
-      "id": "23",
-      "type": "owl:objectProperty"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "255",
@@ -2560,7 +3044,7 @@
     },
     {
       "id": "256",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "257",
@@ -2568,7 +3052,7 @@
     },
     {
       "id": "258",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "259",
@@ -2576,7 +3060,7 @@
     },
     {
       "id": "260",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "261",
@@ -2584,11 +3068,11 @@
     },
     {
       "id": "262",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "263",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "264",
@@ -2604,7 +3088,7 @@
     },
     {
       "id": "267",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "268",
@@ -2612,7 +3096,7 @@
     },
     {
       "id": "269",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "270",
@@ -2620,7 +3104,7 @@
     },
     {
       "id": "271",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "272",
@@ -2628,7 +3112,7 @@
     },
     {
       "id": "273",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "274",
@@ -2636,7 +3120,7 @@
     },
     {
       "id": "275",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "276",
@@ -2644,11 +3128,11 @@
     },
     {
       "id": "277",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "278",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "279",
@@ -2656,7 +3140,7 @@
     },
     {
       "id": "280",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "281",
@@ -2664,7 +3148,7 @@
     },
     {
       "id": "282",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "283",
@@ -2672,11 +3156,11 @@
     },
     {
       "id": "284",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "285",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "286",
@@ -2692,7 +3176,7 @@
     },
     {
       "id": "289",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "290",
@@ -2700,7 +3184,7 @@
     },
     {
       "id": "291",
-      "type": "owl:disjointWith"
+      "type": "rdfs:SubClassOf"
     },
     {
       "id": "292",
@@ -2708,78 +3192,429 @@
     },
     {
       "id": "293",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "294",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "295",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "296",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "297",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "298",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "299",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "300",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "301",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "302",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "303",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "304",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "305",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "306",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "307",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "308",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "309",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "310",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "311",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "312",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "313",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "314",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "315",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "316",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "317",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "318",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "319",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "320",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "321",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "322",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "323",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "324",
+      "type": "rdfs:SubClassOf"
+    },
+    {
+      "id": "325",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "326",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "327",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "328",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "329",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "330",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "331",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "332",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "333",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "334",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "335",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "336",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "337",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "338",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "339",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "40",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "37",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "340",
+      "type": "owl:objectProperty"
+    },
+    {
+      "id": "341",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "342",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "343",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "344",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "345",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "346",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "347",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "348",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "349",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "350",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "351",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "352",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "353",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "354",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "355",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "356",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "357",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "358",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "359",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "360",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "361",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "362",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "363",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "364",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "365",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "366",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "367",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "368",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "369",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "370",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "371",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "372",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "373",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "374",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "375",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "376",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "377",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "378",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "379",
       "type": "owl:disjointWith"
     }
   ],
   "propertyAttribute": [
     {
-      "range": "4",
-      "domain": "3",
+      "range": "1",
+      "domain": "5",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "2"
+      "id": "4"
     },
     {
-      "range": "7",
-      "domain": "4",
+      "range": "8",
+      "domain": "7",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "6"
+      "id": "6",
+      "pos": [
+        183.1127885678083,
+        175.7351197085908
+      ]
+    },
+    {
+      "range": "11",
+      "domain": "1",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "10"
+    },
+    {
+      "range": "1",
+      "domain": "0",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "12",
+      "pos": [
+        -376.4747405611223,
+        -1070.0866048935663
+      ]
     },
     {
       "iri": "http://Synthax.du.Codex/ontology#produces",
       "baseIri": "http://Synthax.du.Codex/ontology",
-      "range": "10",
+      "range": "15",
       "label": {
         "IRI-based": "produces"
       },
       "superproperty": [
-        "11"
+        "16"
       ],
-      "domain": "9",
+      "domain": "14",
       "attributes": [
         "object"
       ],
-      "id": "8",
+      "id": "13",
       "pos": [
-        854.5738486866844,
-        855.5340616290762
+        1786.3017690896163,
+        391.949998859158
       ]
     },
     {
-      "range": "4",
-      "domain": "13",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "12"
-    },
-    {
-      "range": "15",
-      "domain": "3",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "14"
-    },
-    {
-      "range": "7",
-      "domain": "15",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "16"
-    },
-    {
-      "range": "13",
-      "domain": "15",
+      "range": "1",
+      "domain": "18",
       "attributes": [
         "anonymous",
         "object"
@@ -2787,271 +3622,383 @@
       "id": "17"
     },
     {
-      "range": "7",
-      "domain": "3",
+      "range": "1",
+      "domain": "9",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "18"
+      "id": "19",
+      "pos": [
+        -483.95147620429964,
+        -1021.8230363214653
+      ]
     },
     {
-      "range": "13",
-      "domain": "3",
+      "range": "2",
+      "domain": "5",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "19"
+      "id": "20"
+    },
+    {
+      "range": "1",
+      "domain": "22",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "21",
+      "pos": [
+        -342.1224903714699,
+        -737.070833632633
+      ]
+    },
+    {
+      "range": "11",
+      "domain": "2",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "23"
+    },
+    {
+      "range": "1",
+      "domain": "25",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "24",
+      "pos": [
+        -402.835535234939,
+        -774.0938990632469
+      ]
+    },
+    {
+      "range": "18",
+      "domain": "2",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "26"
+    },
+    {
+      "range": "1",
+      "domain": "28",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "27",
+      "pos": [
+        -146.99202667238234,
+        -1151.820512706979
+      ]
+    },
+    {
+      "range": "11",
+      "domain": "5",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "29"
+    },
+    {
+      "range": "1",
+      "domain": "31",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "30",
+      "pos": [
+        -397.5217231074258,
+        -1044.0257035914206
+      ]
+    },
+    {
+      "range": "18",
+      "domain": "5",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "32"
     },
     {
       "iri": "http://www.w3.org/2002/07/owl#topObjectProperty",
       "baseIri": "http://www.w3.org/2002/07/owl",
-      "range": "22",
+      "range": "36",
       "label": {
         "IRI-based": "topObjectProperty"
       },
-      "domain": "22",
+      "domain": "36",
       "subproperty": [
-        "8",
-        "23",
-        "24",
-        "25",
-        "26",
-        "27"
+        "13",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41"
       ],
       "attributes": [
-        "external",
-        "object"
+        "object",
+        "external"
       ],
-      "id": "11",
+      "id": "16",
       "pos": [
-        -322.01359178389697,
-        969.6369366529755
+        3263.0970132399275,
+        685.8454581849476
       ]
     },
     {
       "iri": "http://Synthax.du.Codex/ontology#hasTransformationModel",
       "baseIri": "http://Synthax.du.Codex/ontology",
-      "range": "9",
+      "range": "14",
       "label": {
         "IRI-based": "hasTransformationModel"
       },
       "superproperty": [
-        "11"
+        "16"
       ],
-      "domain": "21",
+      "domain": "42",
       "attributes": [
         "object"
       ],
-      "id": "25",
+      "id": "39",
       "pos": [
-        968.7903862092414,
-        936.3590908784477
+        1819.4334790695837,
+        400.0895713130828
       ]
     },
     {
-      "range": "39",
-      "domain": "13",
+      "range": "8",
+      "domain": "50",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "38"
+      "id": "49",
+      "pos": [
+        233.57355319398536,
+        257.156085229572
+      ]
     },
     {
-      "range": "4",
-      "domain": "15",
+      "range": "56",
+      "domain": "18",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "40"
+      "id": "55"
     },
     {
-      "range": "43",
-      "domain": "42",
+      "range": "8",
+      "domain": "58",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "41"
+      "id": "57",
+      "pos": [
+        305.2449547945172,
+        386.9351899443628
+      ]
     },
     {
-      "range": "43",
-      "domain": "45",
+      "range": "1",
+      "domain": "2",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "44"
+      "id": "59"
     },
     {
-      "range": "48",
-      "domain": "47",
+      "range": "8",
+      "domain": "61",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "46"
+      "id": "60",
+      "pos": [
+        283.8744693308205,
+        356.32793470372656
+      ]
     },
     {
-      "range": "50",
-      "domain": "47",
+      "range": "64",
+      "domain": "63",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "49"
+      "id": "62"
     },
     {
-      "range": "50",
-      "domain": "48",
+      "range": "44",
+      "domain": "43",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "51"
+      "id": "65",
+      "pos": [
+        1822.9830878905725,
+        1467.7571689619663
+      ]
     },
     {
-      "range": "39",
-      "domain": "4",
+      "range": "64",
+      "domain": "67",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "52"
+      "id": "66"
     },
     {
-      "range": "39",
-      "domain": "15",
+      "range": "44",
+      "domain": "69",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "53"
+      "id": "68",
+      "pos": [
+        1777.1630754128755,
+        1369.4305220811166
+      ]
     },
     {
-      "range": "39",
-      "domain": "3",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "54"
-    },
-    {
-      "range": "39",
-      "domain": "7",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "57"
-    },
-    {
-      "range": "71",
-      "domain": "70",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "69"
-    },
-    {
-      "range": "70",
-      "domain": "73",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "72"
-    },
-    {
-      "range": "71",
-      "domain": "73",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "74"
-    },
-    {
-      "range": "42",
-      "domain": "45",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "75"
-    },
-    {
-      "range": "81",
+      "range": "72",
       "domain": "71",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "80",
-      "pos": [
-        689.3137031815178,
-        1309.6636953890195
-      ]
+      "id": "70"
     },
     {
-      "range": "81",
-      "domain": "83",
+      "range": "75",
+      "domain": "74",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "82",
+      "id": "73",
       "pos": [
-        795.3545628998938,
-        1200.6180802904223
+        654.9649424788015,
+        -893.6814269544645
       ]
     },
     {
-      "range": "9",
-      "domain": "29",
+      "range": "77",
+      "domain": "71",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "76"
+    },
+    {
+      "range": "75",
+      "domain": "79",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "78",
+      "pos": [
+        650.4128472598532,
+        -940.0363892185277
+      ]
+    },
+    {
+      "range": "77",
+      "domain": "72",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "80"
+    },
+    {
+      "range": "75",
+      "domain": "82",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "81",
+      "pos": [
+        666.1886238138824,
+        -982.9067691048845
+      ]
+    },
+    {
+      "range": "56",
+      "domain": "1",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "83"
+    },
+    {
+      "range": "75",
+      "domain": "85",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "84",
       "pos": [
-        650.6409240793568,
-        969.7288912451529
+        625.009387636348,
+        -965.8967857445316
       ]
     },
     {
-      "range": "9",
-      "domain": "81",
+      "range": "56",
+      "domain": "2",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "85",
-      "pos": [
-        741.2255854622877,
-        1074.1663259479371
-      ]
+      "id": "86"
     },
     {
-      "range": "90",
-      "domain": "89",
+      "range": "75",
+      "domain": "88",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "88",
+      "id": "87",
       "pos": [
-        378.3332903767715,
-        280.3770891246471
+        700.4924164587563,
+        -764.4613610589009
       ]
     },
     {
-      "range": "90",
+      "range": "56",
+      "domain": "5",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "90"
+    },
+    {
+      "range": "75",
       "domain": "92",
       "attributes": [
         "anonymous",
@@ -3059,74 +4006,58 @@
       ],
       "id": "91",
       "pos": [
-        454.6684872639763,
-        373.4495625229804
+        932.0732679815214,
+        -1043.9277798568862
       ]
     },
     {
-      "range": "90",
-      "domain": "94",
+      "range": "56",
+      "domain": "11",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "93",
-      "pos": [
-        381.02431239812745,
-        246.4751606257066
-      ]
+      "id": "94"
     },
     {
-      "range": "90",
-      "domain": "96",
+      "range": "105",
+      "domain": "104",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "95",
-      "pos": [
-        389.4089021011954,
-        313.4087331782843
-      ]
+      "id": "103"
     },
     {
-      "range": "63",
-      "domain": "62",
+      "range": "104",
+      "domain": "107",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "98",
-      "pos": [
-        1228.80906264953,
-        -148.29553046516872
-      ]
+      "id": "106"
     },
     {
-      "range": "63",
-      "domain": "65",
+      "range": "110",
+      "domain": "109",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "99",
+      "id": "108",
       "pos": [
-        1168.0190114052243,
-        -210.24957429582656
+        2536.7525553554606,
+        1582.5293235834508
       ]
     },
     {
-      "range": "63",
-      "domain": "66",
+      "range": "105",
+      "domain": "107",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "100",
-      "pos": [
-        1237.3778983721197,
-        -107.81122949211438
-      ]
+      "id": "112"
     },
     {
       "range": "63",
@@ -3135,231 +4066,565 @@
         "anonymous",
         "object"
       ],
-      "id": "101",
-      "pos": [
-        1205.7418302550736,
-        -182.50920303717936
-      ]
+      "id": "113"
     },
     {
-      "range": "63",
-      "domain": "68",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "102",
-      "pos": [
-        1120.1491855517393,
-        -222.399663437397
-      ]
-    },
-    {
-      "range": "90",
-      "domain": "104",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "103",
-      "pos": [
-        413.9957435188089,
-        346.0796998068247
-      ]
-    },
-    {
-      "range": "59",
-      "domain": "13",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "105",
-      "pos": [
-        1282.4912258387053,
-        541.0139060486392
-      ]
-    },
-    {
-      "range": "59",
-      "domain": "86",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "106",
-      "pos": [
-        1284.3877105332426,
-        449.1315482323482
-      ]
-    },
-    {
-      "range": "59",
-      "domain": "7",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "107",
-      "pos": [
-        1240.2450616379285,
-        596.0937981020168
-      ]
-    },
-    {
-      "range": "59",
-      "domain": "39",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "108",
-      "pos": [
-        1293.6532962627507,
-        485.024456551993
-      ]
-    },
-    {
-      "range": "59",
-      "domain": "87",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "109",
-      "pos": [
-        1255.2569198589097,
-        414.68721883870074
-      ]
-    },
-    {
-      "range": "56",
-      "domain": "60",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "113",
-      "pos": [
-        589.4204203083416,
-        -294.7792133359994
-      ]
-    },
-    {
-      "range": "56",
-      "domain": "61",
+      "range": "110",
+      "domain": "46",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "114",
       "pos": [
-        553.2292064815664,
-        -267.5740800245721
+        2273.0963052598963,
+        1644.5338276889709
       ]
     },
     {
-      "range": "59",
-      "domain": "4",
+      "range": "64",
+      "domain": "116",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "116",
+      "id": "115",
       "pos": [
-        1267.6454649702596,
-        573.9989729315257
+        1471.434403183719,
+        2106.1978781792336
       ]
     },
     {
-      "range": "59",
-      "domain": "3",
+      "range": "64",
+      "domain": "47",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "117",
       "pos": [
-        1314.1576224296102,
-        527.7850446827014
+        1465.3130562792144,
+        2173.82403731912
       ]
     },
     {
-      "range": "59",
-      "domain": "15",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "118",
-      "pos": [
-        1198.1900618640534,
-        611.2098847171947
-      ]
-    },
-    {
-      "range": "1",
-      "domain": "35",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "119",
-      "pos": [
-        347.63775671142184,
-        -88.52076893640687
-      ]
-    },
-    {
-      "range": "1",
-      "domain": "36",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "120",
-      "pos": [
-        316.0947678479156,
-        -62.89219675281237
-      ]
-    },
-    {
-      "range": "1",
-      "domain": "37",
+      "range": "67",
+      "domain": "122",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "121",
       "pos": [
-        286.6077261031346,
-        1.8860322502332867
+        1693.3123142309605,
+        2245.5523312718906
       ]
     },
     {
-      "range": "56",
-      "domain": "79",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "122",
-      "pos": [
-        635.7501216281407,
-        -307.412983043692
-      ]
-    },
-    {
-      "range": "56",
-      "domain": "55",
+      "range": "67",
+      "domain": "47",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "123",
       "pos": [
-        532.7252228590905,
-        -230.50864598158725
+        1477.0407087124472,
+        2303.4847322376977
+      ]
+    },
+    {
+      "range": "105",
+      "domain": "118",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "124",
+      "pos": [
+        2376.9207435557655,
+        1205.9859313427403
+      ]
+    },
+    {
+      "range": "69",
+      "domain": "122",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "125",
+      "pos": [
+        1744.575783577192,
+        1795.037064964141
+      ]
+    },
+    {
+      "range": "69",
+      "domain": "116",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "128",
+      "pos": [
+        1534.4255249631833,
+        1785.343306790061
+      ]
+    },
+    {
+      "range": "69",
+      "domain": "119",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "129",
+      "pos": [
+        1985.242972674914,
+        1512.0871677237194
+      ]
+    },
+    {
+      "range": "69",
+      "domain": "120",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "130",
+      "pos": [
+        1934.952328146488,
+        1385.6064725617632
+      ]
+    },
+    {
+      "range": "132",
+      "domain": "77",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "131",
+      "pos": [
+        91.84171099190328,
+        921.2552620302631
+      ]
+    },
+    {
+      "range": "2",
+      "domain": "53",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "133",
+      "pos": [
+        -302.7755173474501,
+        -1051.1610796044588
+      ]
+    },
+    {
+      "range": "2",
+      "domain": "3",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "134",
+      "pos": [
+        -435.94281971895225,
+        -806.5697182275949
+      ]
+    },
+    {
+      "range": "2",
+      "domain": "54",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "135",
+      "pos": [
+        -342.5937222815015,
+        -1041.244994870282
+      ]
+    },
+    {
+      "range": "137",
+      "domain": "22",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "136",
+      "pos": [
+        -576.1287497704575,
+        -393.9845615288339
+      ]
+    },
+    {
+      "range": "137",
+      "domain": "25",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "138",
+      "pos": [
+        -636.8417946339266,
+        -431.00762695944775
+      ]
+    },
+    {
+      "range": "104",
+      "domain": "64",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "139",
+      "pos": [
+        1773.5839277315451,
+        2197.4844459948363
+      ]
+    },
+    {
+      "range": "104",
+      "domain": "67",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "140",
+      "pos": [
+        1785.3115801647778,
+        2327.1451409134133
+      ]
+    },
+    {
+      "range": "104",
+      "domain": "63",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "141",
+      "pos": [
+        1728.0359138851875,
+        2312.9923953827574
+      ]
+    },
+    {
+      "range": "132",
+      "domain": "71",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "142",
+      "pos": [
+        37.83528983940175,
+        944.5262836832928
+      ]
+    },
+    {
+      "range": "132",
+      "domain": "72",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "143",
+      "pos": [
+        50.93385237820442,
+        913.4229633561939
+      ]
+    },
+    {
+      "range": "118",
+      "domain": "119",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "146",
+      "pos": [
+        2378.9523169550166,
+        1292.3159288463717
+      ]
+    },
+    {
+      "range": "144",
+      "domain": "148",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "147",
+      "pos": [
+        61.24028495072581,
+        630.1044348332406
+      ]
+    },
+    {
+      "range": "118",
+      "domain": "120",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "149",
+      "pos": [
+        2328.6616724265905,
+        1165.8352336844155
+      ]
+    },
+    {
+      "range": "126",
+      "domain": "116",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "150",
+      "pos": [
+        1127.2201854366572,
+        2076.2981850403653
+      ]
+    },
+    {
+      "range": "126",
+      "domain": "47",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "151",
+      "pos": [
+        1121.098838532153,
+        2143.924344180252
+      ]
+    },
+    {
+      "range": "154",
+      "domain": "104",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "153",
+      "pos": [
+        1883.9642125108996,
+        1862.145048482229
+      ]
+    },
+    {
+      "range": "11",
+      "domain": "96",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "155",
+      "pos": [
+        -1121.9485823939335,
+        184.18078923369754
+      ]
+    },
+    {
+      "range": "154",
+      "domain": "107",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "156",
+      "pos": [
+        1795.831171608891,
+        1800.67649683017
+      ]
+    },
+    {
+      "range": "11",
+      "domain": "99",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "157",
+      "pos": [
+        -1122.4770569866046,
+        239.74982048167112
+      ]
+    },
+    {
+      "range": "154",
+      "domain": "127",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "158",
+      "pos": [
+        1535.3531986415207,
+        1682.7112431716212
+      ]
+    },
+    {
+      "range": "11",
+      "domain": "100",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "159",
+      "pos": [
+        -1105.0674209402441,
+        131.70059684579633
+      ]
+    },
+    {
+      "range": "154",
+      "domain": "105",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "160",
+      "pos": [
+        2030.6005622755533,
+        1411.2723440966533
+      ]
+    },
+    {
+      "range": "11",
+      "domain": "35",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "161",
+      "pos": [
+        -1085.086836110986,
+        39.13022528798397
+      ]
+    },
+    {
+      "range": "154",
+      "domain": "110",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "162",
+      "pos": [
+        2118.6022825845257,
+        1618.5291448868197
+      ]
+    },
+    {
+      "range": "11",
+      "domain": "101",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "163",
+      "pos": [
+        -1107.0069732365992,
+        295.3248694747293
+      ]
+    },
+    {
+      "range": "14",
+      "domain": "44",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "164",
+      "pos": [
+        1766.7495804464265,
+        892.636617113915
+      ]
+    },
+    {
+      "range": "11",
+      "domain": "102",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "165",
+      "pos": [
+        -1069.3255206660374,
+        350.0581503623597
+      ]
+    },
+    {
+      "range": "14",
+      "domain": "154",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "166",
+      "pos": [
+        1778.8019166059148,
+        1073.2581473486844
+      ]
+    },
+    {
+      "range": "56",
+      "domain": "50",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "167",
+      "pos": [
+        537.7570768666867,
+        108.15837356189097
+      ]
+    },
+    {
+      "range": "5",
+      "domain": "169",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "168",
+      "pos": [
+        -561.0527616658318,
+        751.3705414651913
+      ]
+    },
+    {
+      "range": "56",
+      "domain": "89",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "170",
+      "pos": [
+        793.8366416844076,
+        -157.50391807210823
+      ]
+    },
+    {
+      "range": "5",
+      "domain": "172",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "171",
+      "pos": [
+        -401.4241563169002,
+        963.4037883107619
       ]
     },
     {
@@ -3369,974 +4634,431 @@
         "anonymous",
         "object"
       ],
-      "id": "124",
+      "id": "173",
       "pos": [
-        683.5821928337903,
-        -301.72758572429007
+        609.4284784672185,
+        237.93747827668173
       ]
     },
     {
-      "range": "28",
-      "domain": "32",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "125",
-      "pos": [
-        79.71430645374664,
-        972.5597438297223
-      ]
-    },
-    {
-      "range": "1",
-      "domain": "0",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "126",
-      "pos": [
-        286.92271791738,
-        36.35198180503088
-      ]
-    },
-    {
-      "range": "1",
-      "domain": "5",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "127",
-      "pos": [
-        298.31974082902013,
-        69.71934854532806
-      ]
-    },
-    {
-      "range": "1",
-      "domain": "34",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "128",
-      "pos": [
-        296.05749458465783,
-        -31.579185187478647
-      ]
-    },
-    {
-      "range": "97",
-      "domain": "64",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "129"
-    },
-    {
-      "range": "131",
-      "domain": "20",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "130"
-    },
-    {
-      "range": "97",
-      "domain": "131",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "132"
-    },
-    {
-      "range": "97",
-      "domain": "20",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "133"
-    },
-    {
-      "range": "28",
-      "domain": "30",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "134",
-      "pos": [
-        76.31066320789073,
-        1022.0287759351882
-      ]
-    },
-    {
-      "range": "28",
-      "domain": "31",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "135",
-      "pos": [
-        99.89230200311418,
-        1078.9068736350205
-      ]
-    },
-    {
-      "iri": "http://Synthax.du.Codex/ontology#hastransformationpart",
-      "baseIri": "http://Synthax.du.Codex/ontology",
-      "range": "29",
-      "label": {
-        "IRI-based": "hastransformationpart"
-      },
-      "domain": "81",
-      "attributes": [
-        "object"
-      ],
-      "id": "139",
-      "pos": [
-        582.679879138168,
-        1070.7766437655484
-      ]
-    },
-    {
-      "iri": "http://Synthax.du.Codex/ontology#undergoesTransformation",
-      "baseIri": "http://Synthax.du.Codex/ontology",
-      "range": "9",
-      "label": {
-        "IRI-based": "undergoesTransformation"
-      },
-      "superproperty": [
-        "11"
-      ],
-      "domain": "21",
-      "attributes": [
-        "object"
-      ],
-      "id": "24",
-      "pos": [
-        957.7011885669671,
-        907.3187347730906
-      ]
-    },
-    {
-      "range": "7",
-      "domain": "13",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "140"
-    },
-    {
-      "range": "131",
-      "domain": "64",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "141"
-    },
-    {
-      "iri": "http://Synthax.du.Codex/ontology#isPartOfTransformation",
-      "baseIri": "http://Synthax.du.Codex/ontology",
-      "range": "81",
-      "label": {
-        "IRI-based": "isPartOfTransformation"
-      },
-      "domain": "29",
-      "attributes": [
-        "object"
-      ],
-      "id": "142",
-      "pos": [
-        555.9680852412919,
-        1093.7176069131765
-      ]
-    },
-    {
-      "range": "20",
-      "domain": "64",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "143"
-    },
-    {
-      "range": "34",
-      "domain": "5",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "145"
-    },
-    {
-      "iri": "http://Synthax.du.Codex/ontology#hasUnitModel",
-      "baseIri": "http://Synthax.du.Codex/ontology",
-      "range": "33",
-      "label": {
-        "IRI-based": "hasUnitModel"
-      },
-      "superproperty": [
-        "11"
-      ],
-      "domain": "59",
-      "attributes": [
-        "object"
-      ],
-      "id": "27",
-      "pos": [
-        1000.4545669120605,
-        310.67083182668284
-      ]
-    },
-    {
-      "range": "34",
-      "domain": "0",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "146"
-    },
-    {
-      "range": "34",
-      "domain": "37",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "147"
-    },
-    {
-      "range": "33",
-      "domain": "90",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "148",
-      "pos": [
-        676.7464768387729,
-        194.1624943877363
-      ]
-    },
-    {
-      "range": "33",
-      "domain": "136",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "149",
-      "pos": [
-        872.6789578064029,
-        -13.243996772408735
-      ]
-    },
-    {
-      "range": "32",
-      "domain": "31",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "150"
-    },
-    {
-      "range": "33",
-      "domain": "152",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "151",
-      "pos": [
-        1022.2962792819125,
-        124.36555762946625
-      ]
-    },
-    {
-      "range": "30",
-      "domain": "31",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "153"
-    },
-    {
-      "range": "33",
-      "domain": "63",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "154",
-      "pos": [
-        975.72153511501,
-        16.36079784308336
-      ]
-    },
-    {
-      "range": "36",
-      "domain": "34",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "155"
-    },
-    {
-      "range": "33",
-      "domain": "157",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "156",
-      "pos": [
-        804.0018849958801,
-        15.798476813702536
-      ]
-    },
-    {
-      "range": "35",
-      "domain": "34",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "158"
-    },
-    {
-      "range": "33",
-      "domain": "1",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "159",
-      "pos": [
-        632.7152852078879,
-        73.09861210049533
-      ]
-    },
-    {
-      "range": "58",
-      "domain": "61",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "160"
-    },
-    {
-      "range": "3",
-      "domain": "115",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "161",
-      "pos": [
-        1587.5103488864204,
-        607.060316226238
-      ]
-    },
-    {
-      "range": "55",
-      "domain": "61",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "162"
-    },
-    {
-      "range": "81",
-      "domain": "70",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "163",
-      "pos": [
-        783.798855753319,
-        1274.4623930454406
-      ]
-    },
-    {
-      "range": "30",
-      "domain": "32",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "164"
-    },
-    {
-      "range": "81",
-      "domain": "73",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "165",
-      "pos": [
-        625.2146699654347,
-        1299.9734206535877
-      ]
-    },
-    {
-      "range": "58",
-      "domain": "55",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "166"
-    },
-    {
-      "range": "81",
-      "domain": "78",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "167",
-      "pos": [
-        537.6594647194254,
-        1243.4385472825852
-      ]
-    },
-    {
-      "range": "33",
-      "domain": "144",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "168",
-      "pos": [
-        795.5474944644598,
-        255.52337697078525
-      ]
-    },
-    {
-      "range": "60",
-      "domain": "55",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "169"
-    },
-    {
-      "range": "60",
-      "domain": "61",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "170"
-    },
-    {
-      "range": "58",
-      "domain": "60",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "171"
-    },
-    {
-      "range": "21",
-      "domain": "64",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "172",
-      "pos": [
-        1197.010167956925,
-        952.3822079020257
-      ]
-    },
-    {
-      "range": "79",
-      "domain": "61",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "173"
-    },
-    {
-      "range": "21",
-      "domain": "131",
+      "range": "107",
+      "domain": "116",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "174",
       "pos": [
-        1161.7590357211138,
-        974.6290400978381
+        1541.0412849997106,
+        2035.9677513043453
       ]
     },
     {
-      "range": "60",
-      "domain": "79",
+      "range": "56",
+      "domain": "61",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "175"
+      "id": "175",
+      "pos": [
+        588.0579930035218,
+        207.3302230360455
+      ]
     },
     {
-      "range": "21",
-      "domain": "20",
+      "range": "107",
+      "domain": "63",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "176",
       "pos": [
-        1230.3347737540068,
-        884.7240117464019
+        1639.902872983179,
+        2251.5238437306984
       ]
     },
     {
-      "range": "58",
-      "domain": "79",
+      "range": "56",
+      "domain": "7",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "177"
-    },
-    {
-      "range": "21",
-      "domain": "97",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "178",
+      "id": "177",
       "pos": [
-        1219.8798949381426,
-        921.4057938234982
+        487.29631224050956,
+        26.73740804090975
       ]
     },
     {
-      "range": "79",
-      "domain": "55",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "179"
-    },
-    {
-      "range": "78",
-      "domain": "77",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "180",
-      "pos": [
-        291.77231965004677,
-        1282.7409732141725
-      ]
-    },
-    {
-      "range": "183",
-      "domain": "182",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "181"
-    },
-    {
-      "range": "78",
-      "domain": "110",
+      "range": "63",
+      "domain": "116",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "184",
       "pos": [
-        334.1507065639651,
-        1396.8586816782695
+        1425.8863893373612,
+        2221.7058275671548
       ]
     },
     {
-      "range": "78",
-      "domain": "111",
+      "range": "3",
+      "domain": "9",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "185",
+      "id": "187",
       "pos": [
-        410.5812324615161,
-        1423.9691885076013
+        -704.2016555412832,
+        -946.6037198888752
       ]
     },
     {
-      "range": "183",
-      "domain": "187",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "186"
-    },
-    {
-      "range": "78",
-      "domain": "112",
+      "range": "63",
+      "domain": "47",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "188",
       "pos": [
-        293.929257203853,
-        1339.9656071273566
+        1419.7650424328567,
+        2289.3319867070413
       ]
     },
     {
-      "range": "187",
-      "domain": "182",
+      "range": "3",
+      "domain": "31",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "189"
+      "id": "189",
+      "pos": [
+        -617.7719024444094,
+        -968.8063871588305
+      ]
     },
     {
-      "range": "33",
-      "domain": "56",
+      "range": "5",
+      "domain": "178",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "190",
       "pos": [
-        746.6624598514761,
-        -25.534131958436888
+        -506.0466257962213,
+        771.1747490141424
       ]
     },
     {
-      "range": "94",
-      "domain": "92",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "191"
-    },
-    {
-      "range": "152",
-      "domain": "182",
+      "range": "3",
+      "domain": "52",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "192",
       "pos": [
-        1317.842330564235,
-        59.838261169462754
+        -648.2855026924074,
+        -949.8870716594804
       ]
     },
     {
-      "range": "152",
-      "domain": "187",
+      "range": "5",
+      "domain": "183",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "193",
       "pos": [
-        1333.1167614969506,
-        94.064285605616
+        -419.22010513365944,
+        1005.989560180506
       ]
     },
     {
-      "range": "89",
-      "domain": "104",
+      "range": "3",
+      "domain": "53",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "194"
+      "id": "194",
+      "pos": [
+        -522.0224264375188,
+        -1012.4083729710301
+      ]
     },
     {
-      "range": "96",
-      "domain": "92",
+      "range": "5",
+      "domain": "185",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "195"
+      "id": "195",
+      "pos": [
+        -384.6964553338201,
+        983.3197110358362
+      ]
     },
     {
-      "range": "138",
+      "range": "3",
+      "domain": "54",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "196",
+      "pos": [
+        -561.8406313715702,
+        -1002.4922882368535
+      ]
+    },
+    {
+      "range": "5",
+      "domain": "191",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "197",
+      "pos": [
+        -516.9225204277874,
+        703.6762902993561
+      ]
+    },
+    {
+      "range": "51",
       "domain": "137",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "202"
+      "id": "200",
+      "pos": [
+        -525.2283647349218,
+        -63.08160232253739
+      ]
     },
     {
-      "range": "196",
-      "domain": "198",
+      "range": "51",
+      "domain": "8",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "203",
       "pos": [
-        122.64848096794856,
-        682.1314018156947
+        -144.35052788542458,
+        222.42127761152543
       ]
     },
     {
-      "range": "111",
-      "domain": "77",
+      "range": "43",
+      "domain": "45",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "204"
+      "id": "204",
+      "pos": [
+        2020.9770864763323,
+        1887.9470645210047
+      ]
     },
     {
-      "range": "196",
-      "domain": "199",
+      "range": "51",
+      "domain": "97",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "205",
       "pos": [
-        90.09846526944456,
-        708.1705344836569
+        -668.2371775090892,
+        225.76457177762916
       ]
     },
     {
-      "range": "89",
-      "domain": "92",
+      "range": "43",
+      "domain": "46",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "206"
+      "id": "206",
+      "pos": [
+        1989.5294467254319,
+        1674.3833819988868
+      ]
     },
     {
-      "range": "196",
-      "domain": "200",
+      "range": "51",
+      "domain": "208",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "207",
       "pos": [
-        65.82498410775365,
-        785.7119748702636
+        -529.1048275326635,
+        222.59243013217227
       ]
     },
     {
-      "range": "104",
-      "domain": "92",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "208"
-    },
-    {
-      "range": "83",
-      "domain": "201",
+      "range": "43",
+      "domain": "47",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "209",
       "pos": [
-        1050.7071182343036,
-        1242.056013782651
+        1574.1241905363759,
+        1951.2961128107972
       ]
     },
     {
-      "range": "112",
-      "domain": "77",
+      "range": "51",
+      "domain": "3",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "210"
+      "id": "210",
+      "pos": [
+        -511.4722846729179,
+        -330.9485579937463
+      ]
     },
     {
-      "range": "29",
-      "domain": "28",
+      "range": "3",
+      "domain": "0",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "211",
       "pos": [
-        341.2296267752532,
-        991.4171979362143
+        -596.724919898106,
+        -994.867288460976
       ]
     },
     {
-      "range": "112",
-      "domain": "111",
+      "iri": "http://Synthax.du.Codex/ontology#hasCertainty",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "range": "198",
+      "label": {
+        "IRI-based": "hasCertainty"
+      },
+      "domain": "201",
       "attributes": [
-        "anonymous",
         "object"
       ],
-      "id": "212"
+      "id": "212",
+      "pos": [
+        1559.0952517589722,
+        -423.8705949647316
+      ]
     },
     {
-      "range": "29",
-      "domain": "196",
+      "range": "127",
+      "domain": "182",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "213",
       "pos": [
-        338.41199267246674,
-        881.9862271252098
+        1066.6792199008853,
+        1929.7570931156229
       ]
     },
     {
-      "range": "110",
-      "domain": "77",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "214"
-    },
-    {
-      "range": "152",
-      "domain": "216",
+      "range": "127",
+      "domain": "186",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "215",
       "pos": [
-        1326.4200010538989,
-        164.08503130663604
+        1462.4839773673143,
+        1770.8666568718384
       ]
     },
     {
-      "range": "110",
-      "domain": "111",
+      "range": "51",
+      "domain": "93",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "217"
-    },
-    {
-      "range": "152",
-      "domain": "183",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "218",
+      "id": "217",
       "pos": [
-        1336.0656393919419,
-        129.3959811662607
+        -78.11164572458406,
+        -275.27311107499327
       ]
     },
     {
-      "range": "144",
-      "domain": "50",
+      "range": "51",
+      "domain": "132",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "219",
       "pos": [
-        690.043198693311,
-        492.69836585629594
+        -227.71432844546564,
+        434.4641133251167
       ]
     },
     {
-      "range": "71",
-      "domain": "76",
+      "range": "51",
+      "domain": "179",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "220",
+      "id": "221",
       "pos": [
-        746.7314853145068,
-        1548.9851270160807
+        -574.7514184637166,
+        555.964731497364
       ]
     },
     {
-      "range": "112",
-      "domain": "110",
+      "range": "152",
+      "domain": "98",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "221"
+      "id": "222"
     },
     {
-      "range": "196",
-      "domain": "197",
+      "range": "34",
+      "domain": "224",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "222",
+      "id": "223",
       "pos": [
-        70.95237082341659,
-        743.4143366636013
+        1544.923205252494,
+        222.49100656549206
       ]
     },
     {
-      "range": "5",
-      "domain": "0",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "223"
-    },
-    {
-      "range": "5",
-      "domain": "37",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "224"
-    },
-    {
-      "range": "36",
-      "domain": "0",
+      "range": "224",
+      "domain": "33",
       "attributes": [
         "anonymous",
         "object"
@@ -4344,118 +5066,142 @@
       "id": "225"
     },
     {
-      "range": "36",
-      "domain": "37",
+      "range": "34",
+      "domain": "33",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "226"
-    },
-    {
-      "range": "136",
-      "domain": "137",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "id": "227",
+      "id": "226",
       "pos": [
-        944.2467413891368,
-        -274.37530421911765
+        1567.0624654833384,
+        39.76237041559481
       ]
     },
     {
-      "range": "0",
-      "domain": "37",
+      "range": "152",
+      "domain": "224",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "228"
+      "id": "227"
     },
     {
-      "range": "136",
-      "domain": "138",
+      "range": "34",
+      "domain": "152",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "229",
+      "id": "228",
       "pos": [
-        894.9351732438982,
-        -281.0198348921705
+        1354.5402115215688,
+        324.5633798582503
       ]
     },
     {
-      "range": "36",
-      "domain": "5",
+      "range": "152",
+      "domain": "33",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "230"
+      "id": "229"
     },
     {
-      "range": "70",
-      "domain": "43",
+      "range": "109",
+      "domain": "119",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "230",
+      "pos": [
+        2450.782408445739,
+        1461.6025202969158
+      ]
+    },
+    {
+      "range": "127",
+      "domain": "126",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "231",
       "pos": [
-        1030.1073584410194,
-        1379.8491878818465
+        1080.7586961151046,
+        1988.1509475453604
       ]
     },
     {
-      "range": "35",
-      "domain": "37",
+      "range": "127",
+      "domain": "180",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "232"
+      "id": "232",
+      "pos": [
+        1065.8409440568657,
+        2050.862013063864
+      ]
     },
     {
-      "range": "70",
-      "domain": "45",
+      "iri": "http://Synthax.du.Codex/ontology#hasTransformationPart",
+      "inverse": "234",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "range": "154",
+      "label": {
+        "IRI-based": "hasTransformationPart"
+      },
+      "domain": "44",
       "attributes": [
-        "anonymous",
         "object"
       ],
       "id": "233",
       "pos": [
-        966.1982972976693,
-        1470.3677670496977
+        1824.5522384127657,
+        1354.945695957682
       ]
     },
     {
-      "range": "36",
-      "domain": "35",
+      "iri": "http://Synthax.du.Codex/ontology#undergoesTransformation",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "range": "14",
+      "label": {
+        "IRI-based": "undergoesTransformation"
+      },
+      "superproperty": [
+        "16"
+      ],
+      "domain": "34",
       "attributes": [
-        "anonymous",
         "object"
       ],
-      "id": "234"
+      "id": "38",
+      "pos": [
+        1541.7405523637728,
+        367.94199690851127
+      ]
     },
     {
-      "range": "70",
-      "domain": "42",
+      "range": "1",
+      "domain": "52",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "235",
       "pos": [
-        1014.7809899940657,
-        1425.765953769274
+        -428.03532335542377,
+        -1025.1063880920706
       ]
     },
     {
-      "range": "35",
-      "domain": "5",
+      "range": "11",
+      "domain": "18",
       "attributes": [
         "anonymous",
         "object"
@@ -4463,21 +5209,21 @@
       "id": "236"
     },
     {
-      "range": "144",
-      "domain": "47",
+      "range": "1",
+      "domain": "53",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "237",
       "pos": [
-        752.163746514716,
-        502.7211009760978
+        -301.7722471005352,
+        -1087.6276894036203
       ]
     },
     {
-      "range": "35",
-      "domain": "0",
+      "range": "224",
+      "domain": "98",
       "attributes": [
         "anonymous",
         "object"
@@ -4485,21 +5231,34 @@
       "id": "238"
     },
     {
-      "range": "144",
-      "domain": "48",
+      "range": "1",
+      "domain": "54",
       "attributes": [
         "anonymous",
         "object"
       ],
       "id": "239",
       "pos": [
-        652.6442612681674,
-        460.9518907383547
+        -341.59045203458663,
+        -1077.7116046694437
       ]
     },
     {
-      "range": "63",
-      "domain": "152",
+      "iri": "http://Synthax.du.Codex/ontology#isPartOfTransformation",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "range": "154",
+      "label": {
+        "IRI-based": "isPartOfTransformation"
+      },
+      "domain": "44",
+      "attributes": [
+        "object"
+      ],
+      "id": "234"
+    },
+    {
+      "range": "33",
+      "domain": "98",
       "attributes": [
         "anonymous",
         "object"
@@ -4507,17 +5266,21 @@
       "id": "240"
     },
     {
-      "range": "152",
-      "domain": "90",
+      "range": "34",
+      "domain": "98",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "241"
+      "id": "241",
+      "pos": [
+        1442.9029585600701,
+        314.1965733321581
+      ]
     },
     {
-      "range": "1",
-      "domain": "136",
+      "range": "31",
+      "domain": "9",
       "attributes": [
         "anonymous",
         "object"
@@ -4525,8 +5288,28 @@
       "id": "242"
     },
     {
-      "range": "152",
-      "domain": "144",
+      "iri": "http://Synthax.du.Codex/ontology#hasUnitModel",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "range": "51",
+      "label": {
+        "IRI-based": "hasUnitModel"
+      },
+      "superproperty": [
+        "16"
+      ],
+      "domain": "95",
+      "attributes": [
+        "object"
+      ],
+      "id": "41",
+      "pos": [
+        -19.38154471611432,
+        -6.706320193138346
+      ]
+    },
+    {
+      "range": "31",
+      "domain": "0",
       "attributes": [
         "anonymous",
         "object"
@@ -4534,8 +5317,8 @@
       "id": "243"
     },
     {
-      "range": "152",
-      "domain": "157",
+      "range": "31",
+      "domain": "54",
       "attributes": [
         "anonymous",
         "object"
@@ -4543,26 +5326,34 @@
       "id": "244"
     },
     {
-      "range": "152",
-      "domain": "136",
+      "range": "179",
+      "domain": "183",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "245"
+      "id": "245",
+      "pos": [
+        -649.2480703725253,
+        1136.301055869735
+      ]
     },
     {
-      "range": "1",
-      "domain": "152",
+      "range": "179",
+      "domain": "185",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "246"
+      "id": "246",
+      "pos": [
+        -614.724420572686,
+        1113.631206725065
+      ]
     },
     {
-      "range": "67",
-      "domain": "65",
+      "range": "47",
+      "domain": "46",
       "attributes": [
         "anonymous",
         "object"
@@ -4570,17 +5361,21 @@
       "id": "247"
     },
     {
-      "range": "68",
-      "domain": "62",
+      "range": "179",
+      "domain": "169",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "248"
+      "id": "248",
+      "pos": [
+        -791.0807269046977,
+        881.6820371544203
+      ]
     },
     {
-      "range": "67",
-      "domain": "68",
+      "range": "45",
+      "domain": "46",
       "attributes": [
         "anonymous",
         "object"
@@ -4588,17 +5383,21 @@
       "id": "249"
     },
     {
-      "range": "65",
-      "domain": "68",
+      "range": "179",
+      "domain": "172",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "250"
+      "id": "250",
+      "pos": [
+        -631.4521215557661,
+        1093.7152839999908
+      ]
     },
     {
-      "range": "68",
-      "domain": "66",
+      "range": "53",
+      "domain": "31",
       "attributes": [
         "anonymous",
         "object"
@@ -4606,17 +5405,21 @@
       "id": "251"
     },
     {
-      "range": "67",
-      "domain": "66",
+      "range": "2",
+      "domain": "0",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "252"
+      "id": "252",
+      "pos": [
+        -377.4780108080372,
+        -1033.6199950944047
+      ]
     },
     {
-      "range": "67",
-      "domain": "62",
+      "range": "52",
+      "domain": "31",
       "attributes": [
         "anonymous",
         "object"
@@ -4624,57 +5427,21 @@
       "id": "253"
     },
     {
-      "range": "65",
-      "domain": "62",
+      "range": "2",
+      "domain": "22",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "254"
-    },
-    {
-      "iri": "http://Synthax.du.Codex/ontology#containsUnits",
-      "baseIri": "http://Synthax.du.Codex/ontology",
-      "range": "21",
-      "label": {
-        "IRI-based": "containsUnits"
-      },
-      "superproperty": [
-        "11"
-      ],
-      "domain": "10",
-      "attributes": [
-        "object"
-      ],
-      "id": "26",
+      "id": "254",
       "pos": [
-        994.5386026076762,
-        804.6086228053018
+        -343.12576061838485,
+        -700.6042238334715
       ]
     },
     {
-      "iri": "http://Synthax.du.Codex/ontology#constituteUnit",
-      "baseIri": "http://Synthax.du.Codex/ontology",
-      "range": "21",
-      "label": {
-        "IRI-based": "constituteUnit"
-      },
-      "superproperty": [
-        "11"
-      ],
-      "domain": "59",
-      "attributes": [
-        "object"
-      ],
-      "id": "23",
-      "pos": [
-        1128.6110916822245,
-        677.9009925326308
-      ]
-    },
-    {
-      "range": "62",
-      "domain": "66",
+      "range": "82",
+      "domain": "88",
       "attributes": [
         "anonymous",
         "object"
@@ -4682,17 +5449,21 @@
       "id": "255"
     },
     {
-      "range": "94",
-      "domain": "96",
+      "range": "2",
+      "domain": "25",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "256"
+      "id": "256",
+      "pos": [
+        -403.8388054818539,
+        -737.6272892640853
+      ]
     },
     {
-      "range": "65",
-      "domain": "66",
+      "range": "79",
+      "domain": "88",
       "attributes": [
         "anonymous",
         "object"
@@ -4700,17 +5471,21 @@
       "id": "257"
     },
     {
-      "range": "96",
-      "domain": "104",
+      "range": "2",
+      "domain": "48",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "258"
+      "id": "258",
+      "pos": [
+        -99.69607079946724,
+        -1051.8381624422714
+      ]
     },
     {
-      "range": "94",
-      "domain": "104",
+      "range": "45",
+      "domain": "47",
       "attributes": [
         "anonymous",
         "object"
@@ -4718,17 +5493,21 @@
       "id": "259"
     },
     {
-      "range": "89",
-      "domain": "96",
+      "range": "2",
+      "domain": "31",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "260"
+      "id": "260",
+      "pos": [
+        -398.5249933543407,
+        -1007.5590937922591
+      ]
     },
     {
-      "range": "94",
-      "domain": "89",
+      "range": "82",
+      "domain": "79",
       "attributes": [
         "anonymous",
         "object"
@@ -4736,26 +5515,34 @@
       "id": "261"
     },
     {
-      "range": "83",
-      "domain": "70",
+      "range": "2",
+      "domain": "52",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "262"
+      "id": "262",
+      "pos": [
+        -429.0385936023387,
+        -988.639778292909
+      ]
     },
     {
-      "range": "71",
-      "domain": "78",
+      "range": "179",
+      "domain": "178",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "263"
+      "id": "263",
+      "pos": [
+        -736.0745910350872,
+        901.4862447033713
+      ]
     },
     {
-      "range": "83",
-      "domain": "71",
+      "range": "85",
+      "domain": "79",
       "attributes": [
         "anonymous",
         "object"
@@ -4763,8 +5550,8 @@
       "id": "264"
     },
     {
-      "range": "83",
-      "domain": "73",
+      "range": "85",
+      "domain": "88",
       "attributes": [
         "anonymous",
         "object"
@@ -4772,8 +5559,8 @@
       "id": "265"
     },
     {
-      "range": "83",
-      "domain": "78",
+      "range": "82",
+      "domain": "85",
       "attributes": [
         "anonymous",
         "object"
@@ -4781,17 +5568,21 @@
       "id": "266"
     },
     {
-      "range": "78",
-      "domain": "73",
+      "range": "97",
+      "domain": "101",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "267"
+      "id": "267",
+      "pos": [
+        -1147.0003274186329,
+        393.0951074832371
+      ]
     },
     {
-      "range": "78",
-      "domain": "70",
+      "range": "74",
+      "domain": "88",
       "attributes": [
         "anonymous",
         "object"
@@ -4799,17 +5590,21 @@
       "id": "268"
     },
     {
-      "range": "198",
-      "domain": "199",
+      "range": "97",
+      "domain": "102",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "269"
+      "id": "269",
+      "pos": [
+        -1109.3188748480713,
+        447.8283883708675
+      ]
     },
     {
-      "range": "197",
-      "domain": "200",
+      "range": "85",
+      "domain": "74",
       "attributes": [
         "anonymous",
         "object"
@@ -4817,17 +5612,21 @@
       "id": "270"
     },
     {
-      "range": "197",
-      "domain": "199",
+      "range": "180",
+      "domain": "181",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "271"
+      "id": "271",
+      "pos": [
+        735.9522397472831,
+        2398.761830494901
+      ]
     },
     {
-      "range": "200",
-      "domain": "199",
+      "range": "82",
+      "domain": "74",
       "attributes": [
         "anonymous",
         "object"
@@ -4835,17 +5634,21 @@
       "id": "272"
     },
     {
-      "range": "196",
-      "domain": "28",
+      "range": "180",
+      "domain": "47",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "273"
+      "id": "273",
+      "pos": [
+        1106.181086473914,
+        2206.635409698756
+      ]
     },
     {
-      "range": "216",
-      "domain": "182",
+      "range": "74",
+      "domain": "79",
       "attributes": [
         "anonymous",
         "object"
@@ -4853,17 +5656,21 @@
       "id": "274"
     },
     {
-      "range": "183",
-      "domain": "216",
+      "range": "182",
+      "domain": "116",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "275"
+      "id": "275",
+      "pos": [
+        1113.140709222438,
+        2017.9043306106278
+      ]
     },
     {
-      "range": "187",
-      "domain": "216",
+      "range": "58",
+      "domain": "61",
       "attributes": [
         "anonymous",
         "object"
@@ -4871,26 +5678,34 @@
       "id": "276"
     },
     {
-      "range": "197",
-      "domain": "198",
+      "range": "182",
+      "domain": "47",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "277"
+      "id": "277",
+      "pos": [
+        1107.0193623179334,
+        2085.5304897505143
+      ]
     },
     {
-      "range": "200",
-      "domain": "198",
+      "range": "186",
+      "domain": "119",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "278"
+      "id": "278",
+      "pos": [
+        1959.7629144005975,
+        1585.7577553005017
+      ]
     },
     {
-      "range": "90",
-      "domain": "144",
+      "range": "58",
+      "domain": "7",
       "attributes": [
         "anonymous",
         "object"
@@ -4898,17 +5713,21 @@
       "id": "279"
     },
     {
-      "range": "63",
-      "domain": "90",
+      "range": "186",
+      "domain": "46",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "280"
+      "id": "280",
+      "pos": [
+        1918.2293759734184,
+        1649.7273226948196
+      ]
     },
     {
-      "range": "29",
-      "domain": "81",
+      "range": "7",
+      "domain": "61",
       "attributes": [
         "anonymous",
         "object"
@@ -4916,17 +5735,21 @@
       "id": "281"
     },
     {
-      "range": "63",
-      "domain": "144",
+      "range": "186",
+      "domain": "47",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "282"
+      "id": "282",
+      "pos": [
+        1502.8241197843624,
+        1926.64005350673
+      ]
     },
     {
-      "range": "157",
-      "domain": "90",
+      "range": "169",
+      "domain": "185",
       "attributes": [
         "anonymous",
         "object"
@@ -4934,26 +5757,34 @@
       "id": "283"
     },
     {
-      "range": "136",
-      "domain": "144",
+      "range": "97",
+      "domain": "99",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "284"
+      "id": "284",
+      "pos": [
+        -1162.4704111686385,
+        337.5200584901788
+      ]
     },
     {
-      "range": "157",
-      "domain": "144",
+      "range": "97",
+      "domain": "100",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "285"
+      "id": "285",
+      "pos": [
+        -1145.0607751222778,
+        229.4708348543041
+      ]
     },
     {
-      "range": "63",
-      "domain": "157",
+      "range": "183",
+      "domain": "178",
       "attributes": [
         "anonymous",
         "object"
@@ -4961,8 +5792,8 @@
       "id": "286"
     },
     {
-      "range": "63",
-      "domain": "136",
+      "range": "172",
+      "domain": "185",
       "attributes": [
         "anonymous",
         "object"
@@ -4970,8 +5801,8 @@
       "id": "287"
     },
     {
-      "range": "136",
-      "domain": "90",
+      "range": "25",
+      "domain": "22",
       "attributes": [
         "anonymous",
         "object"
@@ -4979,17 +5810,21 @@
       "id": "288"
     },
     {
-      "range": "136",
-      "domain": "157",
+      "range": "95",
+      "domain": "11",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "289"
+      "id": "289",
+      "pos": [
+        -279.8705275063548,
+        15.368117969309566
+      ]
     },
     {
-      "range": "1",
-      "domain": "90",
+      "range": "182",
+      "domain": "126",
       "attributes": [
         "anonymous",
         "object"
@@ -4997,17 +5832,21 @@
       "id": "290"
     },
     {
-      "range": "1",
-      "domain": "157",
+      "range": "95",
+      "domain": "56",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "291"
+      "id": "291",
+      "pos": [
+        508.2062916079773,
+        -39.20264985596746
+      ]
     },
     {
-      "range": "1",
-      "domain": "144",
+      "range": "183",
+      "domain": "185",
       "attributes": [
         "anonymous",
         "object"
@@ -5015,13 +5854,904 @@
       "id": "292"
     },
     {
-      "range": "1",
-      "domain": "63",
+      "range": "95",
+      "domain": "144",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "id": "293"
+      "id": "293",
+      "pos": [
+        239.34943140455482,
+        153.69503934057846
+      ]
+    },
+    {
+      "range": "178",
+      "domain": "185",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "294"
+    },
+    {
+      "range": "18",
+      "domain": "71",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "295",
+      "pos": [
+        274.0324328394135,
+        905.5088159888827
+      ]
+    },
+    {
+      "range": "186",
+      "domain": "126",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "296"
+    },
+    {
+      "range": "18",
+      "domain": "72",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "297",
+      "pos": [
+        287.13099537821614,
+        874.4054956617837
+      ]
+    },
+    {
+      "range": "186",
+      "domain": "182",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "298"
+    },
+    {
+      "range": "18",
+      "domain": "145",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "299",
+      "pos": [
+        562.1545742545675,
+        780.3075869853591
+      ]
+    },
+    {
+      "range": "180",
+      "domain": "126",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "300"
+    },
+    {
+      "range": "18",
+      "domain": "77",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "301",
+      "pos": [
+        328.038853991915,
+        882.237794335853
+      ]
+    },
+    {
+      "range": "180",
+      "domain": "182",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "302"
+    },
+    {
+      "range": "97",
+      "domain": "96",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "303",
+      "pos": [
+        -1161.9419365759675,
+        281.95102724220527
+      ]
+    },
+    {
+      "range": "95",
+      "domain": "2",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "304",
+      "pos": [
+        56.147920237851366,
+        -482.3274804269868
+      ]
+    },
+    {
+      "range": "95",
+      "domain": "18",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "305",
+      "pos": [
+        356.85611037524666,
+        282.8204298308947
+      ]
+    },
+    {
+      "range": "186",
+      "domain": "180",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "306"
+    },
+    {
+      "range": "95",
+      "domain": "75",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "307",
+      "pos": [
+        570.2291918176895,
+        -486.05796844951806
+      ]
+    },
+    {
+      "range": "9",
+      "domain": "0",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "308"
+    },
+    {
+      "range": "9",
+      "domain": "54",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "309"
+    },
+    {
+      "range": "53",
+      "domain": "0",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "310"
+    },
+    {
+      "range": "53",
+      "domain": "54",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "311"
+    },
+    {
+      "range": "93",
+      "domain": "74",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "312",
+      "pos": [
+        354.9974007572285,
+        -795.5227853797517
+      ]
+    },
+    {
+      "range": "0",
+      "domain": "54",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "313"
+    },
+    {
+      "range": "93",
+      "domain": "79",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "314",
+      "pos": [
+        350.44530553828014,
+        -841.8777476438147
+      ]
+    },
+    {
+      "range": "53",
+      "domain": "9",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "315"
+    },
+    {
+      "range": "93",
+      "domain": "82",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "316",
+      "pos": [
+        366.2210820923094,
+        -884.7481275301714
+      ]
+    },
+    {
+      "range": "52",
+      "domain": "54",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "317"
+    },
+    {
+      "range": "93",
+      "domain": "85",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "318",
+      "pos": [
+        325.04184591477514,
+        -867.7381441698187
+      ]
+    },
+    {
+      "range": "53",
+      "domain": "52",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "319"
+    },
+    {
+      "range": "93",
+      "domain": "88",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "320",
+      "pos": [
+        400.5248747371834,
+        -666.302719484188
+      ]
+    },
+    {
+      "range": "52",
+      "domain": "9",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "321"
+    },
+    {
+      "range": "95",
+      "domain": "1",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "322",
+      "pos": [
+        57.15119048476629,
+        -518.7940902261483
+      ]
+    },
+    {
+      "range": "52",
+      "domain": "0",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "323"
+    },
+    {
+      "range": "95",
+      "domain": "5",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "324",
+      "pos": [
+        3.649842595849833,
+        313.02702000832323
+      ]
+    },
+    {
+      "range": "97",
+      "domain": "8",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "325"
+    },
+    {
+      "range": "8",
+      "domain": "179",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "326"
+    },
+    {
+      "range": "3",
+      "domain": "137",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "327"
+    },
+    {
+      "range": "8",
+      "domain": "132",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "328"
+    },
+    {
+      "range": "8",
+      "domain": "208",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "329"
+    },
+    {
+      "range": "8",
+      "domain": "137",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "330"
+    },
+    {
+      "range": "3",
+      "domain": "8",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "331"
+    },
+    {
+      "range": "101",
+      "domain": "99",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "332"
+    },
+    {
+      "range": "102",
+      "domain": "96",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "333"
+    },
+    {
+      "range": "101",
+      "domain": "102",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "334"
+    },
+    {
+      "range": "99",
+      "domain": "102",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "335"
+    },
+    {
+      "range": "102",
+      "domain": "100",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "336"
+    },
+    {
+      "range": "101",
+      "domain": "100",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "337"
+    },
+    {
+      "range": "101",
+      "domain": "96",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "338"
+    },
+    {
+      "range": "99",
+      "domain": "96",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "339"
+    },
+    {
+      "iri": "http://Synthax.du.Codex/ontology#containsUnits",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "range": "214",
+      "label": {
+        "IRI-based": "containsUnits"
+      },
+      "superproperty": [
+        "16"
+      ],
+      "domain": "216",
+      "attributes": [
+        "object"
+      ],
+      "id": "40",
+      "pos": [
+        1245.5866697727797,
+        -282.29446569853366
+      ]
+    },
+    {
+      "iri": "http://Synthax.du.Codex/ontology#constituteUnit",
+      "baseIri": "http://Synthax.du.Codex/ontology",
+      "range": "34",
+      "label": {
+        "IRI-based": "constituteUnit"
+      },
+      "superproperty": [
+        "16"
+      ],
+      "domain": "95",
+      "comment": {
+        "en": "states that one or more identified discontinuities constitute a unit, which can be certain or hypothetical"
+      },
+      "attributes": [
+        "object"
+      ],
+      "id": "37",
+      "pos": [
+        845.736798596278,
+        2.8011946595775044
+      ]
+    },
+    {
+      "iri": "http://purl.org/dc/terms/hasPart",
+      "inverse": "340",
+      "baseIri": "http://purl.org/dc/terms",
+      "range": "218",
+      "label": {
+        "IRI-based": "hasPart"
+      },
+      "domain": "220",
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "id": "340",
+      "pos": [
+        1240.5390822682566,
+        -192.92741755386245
+      ]
+    },
+    {
+      "range": "96",
+      "domain": "100",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "341"
+    },
+    {
+      "range": "169",
+      "domain": "172",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "342"
+    },
+    {
+      "range": "99",
+      "domain": "100",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "343"
+    },
+    {
+      "range": "172",
+      "domain": "178",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "344"
+    },
+    {
+      "range": "169",
+      "domain": "178",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "345"
+    },
+    {
+      "range": "183",
+      "domain": "172",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "346"
+    },
+    {
+      "range": "169",
+      "domain": "183",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "347"
+    },
+    {
+      "range": "110",
+      "domain": "104",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "348"
+    },
+    {
+      "range": "105",
+      "domain": "127",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "349"
+    },
+    {
+      "range": "110",
+      "domain": "105",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "350"
+    },
+    {
+      "range": "110",
+      "domain": "107",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "351"
+    },
+    {
+      "range": "110",
+      "domain": "127",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "352"
+    },
+    {
+      "range": "127",
+      "domain": "107",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "353"
+    },
+    {
+      "range": "127",
+      "domain": "104",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "354"
+    },
+    {
+      "range": "116",
+      "domain": "119",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "355"
+    },
+    {
+      "range": "122",
+      "domain": "120",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "356"
+    },
+    {
+      "range": "122",
+      "domain": "119",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "357"
+    },
+    {
+      "range": "120",
+      "domain": "119",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "358"
+    },
+    {
+      "range": "69",
+      "domain": "43",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "359"
+    },
+    {
+      "range": "50",
+      "domain": "61",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "360"
+    },
+    {
+      "range": "58",
+      "domain": "50",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "361"
+    },
+    {
+      "range": "7",
+      "domain": "50",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "362"
+    },
+    {
+      "range": "122",
+      "domain": "116",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "363"
+    },
+    {
+      "range": "120",
+      "domain": "116",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "364"
+    },
+    {
+      "range": "179",
+      "domain": "132",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "365"
+    },
+    {
+      "range": "97",
+      "domain": "179",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "366"
+    },
+    {
+      "range": "44",
+      "domain": "154",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "367"
+    },
+    {
+      "range": "97",
+      "domain": "132",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "368"
+    },
+    {
+      "range": "208",
+      "domain": "179",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "369"
+    },
+    {
+      "range": "137",
+      "domain": "132",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "370"
+    },
+    {
+      "range": "208",
+      "domain": "132",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "371"
+    },
+    {
+      "range": "97",
+      "domain": "208",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "372"
+    },
+    {
+      "range": "97",
+      "domain": "137",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "373"
+    },
+    {
+      "range": "137",
+      "domain": "179",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "374"
+    },
+    {
+      "range": "137",
+      "domain": "208",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "375"
+    },
+    {
+      "range": "3",
+      "domain": "179",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "376"
+    },
+    {
+      "range": "3",
+      "domain": "208",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "377"
+    },
+    {
+      "range": "3",
+      "domain": "132",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "378"
+    },
+    {
+      "range": "3",
+      "domain": "97",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "id": "379"
     }
   ]
 }
