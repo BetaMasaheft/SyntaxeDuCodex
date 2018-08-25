@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://Syntaxe.du.Codex/ontology"
-     xml:base="http://Syntaxe.du.Codex/ontology"
+<rdf:RDF xmlns="https://w3id.org/sdc/ontology"
+     xml:base="https://w3id.org/sdc/ontology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://Syntaxe.du.Codex/ontology">
-        <owl:versionIRI rdf:resource="http://Syntaxe.du.Codex/ontology/0.1"/>
+    <owl:Ontology rdf:about="https://w3id.org/sdc/ontology">
+        <owl:versionIRI rdf:resource="https://w3id.org/sdc/ontology/0.1"/>
         <dc:title>La Syntaxe du Codex</dc:title>
         <dc:language>en</dc:language>
         <dc:description>Ontology based on the book &quot;La Syntaxe du Codex. Essai de codicologie structurale&quot; by Patrick Andrist, Paul Canart and Marilena Maniaci, Turnhout: Brepols 2013. and Andrist, P. 2015. ‘Syntactical Description of Manuscripts’, in A. Bausi, P. G. Borbone, F. Briquel Chatonnet, P. Buzi, J. Gippert, C. Macé, M. Maniaci, Z. Melissakis, L. Parodi, W. Witakowski, and E. Sokolinski, eds, Comparative Oriental Manuscript Studies: An Introduction (Hamburg: Tredition, 2015), 511–520.</dc:description>
         <dc:language>fr</dc:language>
         <dc:creator>Pietro Maria Liuzzo</dc:creator>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -26,170 +26,170 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#belongsTo -->
 
-    <owl:ObjectProperty rdf:about="http://Syntaxe.du.Codex/ontology#belongsTo">
+    <!-- https://w3id.org/sdc/ontology#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#belongsTo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#Stratum"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Stratum"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#constituteUnit -->
 
-    <owl:ObjectProperty rdf:about="http://Syntaxe.du.Codex/ontology#constituteUnit">
+    <!-- https://w3id.org/sdc/ontology#constituteUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#constituteUnit">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#Unit"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
         <rdfs:comment xml:lang="en">states that one or more identified elements constitute a unit, which can be certain or hypothetical</rdfs:comment>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#containsUnits -->
 
-    <owl:ObjectProperty rdf:about="http://Syntaxe.du.Codex/ontology#containsUnits">
+    <!-- https://w3id.org/sdc/ontology#containsUnits -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#containsUnits">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#UniCirc"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#Unit"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniCirc"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#hasCertainty -->
 
-    <owl:ObjectProperty rdf:about="http://Syntaxe.du.Codex/ontology#hasCertainty">
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#Transformation"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#UniCirc"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#Unit"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#Certain"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#Hypothetique"/>
+    <!-- https://w3id.org/sdc/ontology#hasCertainty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#hasCertainty">
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#Transformation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniCirc"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Certain"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Hypothetique"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#hasStratum -->
 
-    <owl:ObjectProperty rdf:about="http://Syntaxe.du.Codex/ontology#hasStratum">
+    <!-- https://w3id.org/sdc/ontology#hasStratum -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#hasStratum">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://Syntaxe.du.Codex/ontology#isStratumOf"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#UniCirc"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#Stratum"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/sdc/ontology#isStratumOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniCirc"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Stratum"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#hasTransformationModel -->
 
-    <owl:ObjectProperty rdf:about="http://Syntaxe.du.Codex/ontology#hasTransformationModel">
+    <!-- https://w3id.org/sdc/ontology#hasTransformationModel -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#hasTransformationModel">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#UniCirc"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#Transformation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniCirc"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Transformation"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#hasTransformationPart -->
 
-    <owl:ObjectProperty rdf:about="http://Syntaxe.du.Codex/ontology#hasTransformationPart">
-        <owl:inverseOf rdf:resource="http://Syntaxe.du.Codex/ontology#isPartOfTransformation"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#Simple"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#Multiples"/>
+    <!-- https://w3id.org/sdc/ontology#hasTransformationPart -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#hasTransformationPart">
+        <owl:inverseOf rdf:resource="https://w3id.org/sdc/ontology#isPartOfTransformation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#Simple"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Multiples"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#hasUnitModel -->
 
-    <owl:ObjectProperty rdf:about="http://Syntaxe.du.Codex/ontology#hasUnitModel">
+    <!-- https://w3id.org/sdc/ontology#hasUnitModel -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#hasUnitModel">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#Unit"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#Modele"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Modele"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#isPartOfTransformation -->
 
-    <owl:ObjectProperty rdf:about="http://Syntaxe.du.Codex/ontology#isPartOfTransformation">
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#Simple"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#Multiples"/>
+    <!-- https://w3id.org/sdc/ontology#isPartOfTransformation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#isPartOfTransformation">
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#Simple"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Multiples"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#isStratumOf -->
 
-    <owl:ObjectProperty rdf:about="http://Syntaxe.du.Codex/ontology#isStratumOf">
+    <!-- https://w3id.org/sdc/ontology#isStratumOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#isStratumOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#UniCirc"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#Stratum"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniCirc"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Stratum"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#produces -->
 
-    <owl:ObjectProperty rdf:about="http://Syntaxe.du.Codex/ontology#produces">
+    <!-- https://w3id.org/sdc/ontology#produces -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#produces">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#Transformation"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#UniCirc"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#Transformation"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#UniCirc"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#resultsIn -->
 
-    <owl:ObjectProperty rdf:about="http://Syntaxe.du.Codex/ontology#resultsIn">
+    <!-- https://w3id.org/sdc/ontology#resultsIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#resultsIn">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#Transformation"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#UniCirc"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#Transformation"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#UniCirc"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#undergoesTransformation -->
 
-    <owl:ObjectProperty rdf:about="http://Syntaxe.du.Codex/ontology#undergoesTransformation">
+    <!-- https://w3id.org/sdc/ontology#undergoesTransformation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#undergoesTransformation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#Transformation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Transformation"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://purl.org/dc/terms/hasPart -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/hasPart">
         <owl:inverseOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#UniCirc"/>
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#Unit"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniCirc"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
-        <rdfs:domain rdf:resource="http://Syntaxe.du.Codex/ontology#Stratum"/>
-        <rdfs:range rdf:resource="http://Syntaxe.du.Codex/ontology#UniCirc"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#Stratum"/>
+        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#UniCirc"/>
     </rdf:Description>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -197,844 +197,844 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#A1 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#A1">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Accroissement"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#MA3"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#MA4"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#R1"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#R3"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Restauration"/>
+    <!-- https://w3id.org/sdc/ontology#A1 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#A1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Accroissement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#MA3"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#MA4"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#R1"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#R3"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Restauration"/>
         <rdfs:label xml:lang="fr">ajout de support matériel avec contenu</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#A2 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#A2">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Accroissement"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#R2"/>
+    <!-- https://w3id.org/sdc/ontology#A2 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#A2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Accroissement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#R2"/>
         <rdfs:label xml:lang="fr">ajout de contenu sans support matériel</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#A3 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#A3">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Accroissement"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UA1"/>
+    <!-- https://w3id.org/sdc/ontology#A3 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#A3">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Accroissement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UA1"/>
         <rdfs:label xml:lang="fr">ajout de contenu et de support matériel avec contenu</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#A4 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#A4">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Accroissement"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#MA1"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#P1"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UA1"/>
+    <!-- https://w3id.org/sdc/ontology#A4 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#A4">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Accroissement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#MA1"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#P1"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UA1"/>
         <rdfs:label xml:lang="fr">union de codex</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Accroissement -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Accroissement">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Simple"/>
-        <owl:disjointWith rdf:resource="http://Syntaxe.du.Codex/ontology#Decroissement"/>
+    <!-- https://w3id.org/sdc/ontology#Accroissement -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Accroissement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Simple"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/sdc/ontology#Decroissement"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Cah1 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Cah1">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleCah"/>
+    <!-- https://w3id.org/sdc/ontology#Cah1 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Cah1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleCah"/>
         <rdfs:label xml:lang="fr">série de structure uniforme</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Cah2 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Cah2">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleCah"/>
+    <!-- https://w3id.org/sdc/ontology#Cah2 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Cah2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleCah"/>
         <rdfs:label xml:lang="fr">séries homogènes de cahiers de structure différentes</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Cah3 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Cah3">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleCah"/>
+    <!-- https://w3id.org/sdc/ontology#Cah3 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Cah3">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleCah"/>
         <rdfs:label xml:lang="fr">série récurrente de cahiers de structures différentes</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Cah4 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Cah4">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleCah"/>
+    <!-- https://w3id.org/sdc/ontology#Cah4 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Cah4">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleCah"/>
         <rdfs:label xml:lang="fr">série à changements aléatoires</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Certain -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Certain"/>
-    
+    <!-- https://w3id.org/sdc/ontology#Certain -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Certain"/>
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Cont1 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Cont1">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleCont"/>
+    <!-- https://w3id.org/sdc/ontology#Cont1 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Cont1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleCont"/>
         <rdfs:label xml:lang="fr">texte unitaire</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Cont2 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Cont2">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleCont"/>
+    <!-- https://w3id.org/sdc/ontology#Cont2 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Cont2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleCont"/>
         <rdfs:label xml:lang="fr">plusieurs textes sans lien</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Cont3 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Cont3">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleCont"/>
+    <!-- https://w3id.org/sdc/ontology#Cont3 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Cont3">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleCont"/>
         <rdfs:label xml:lang="fr">texte unitaire et sous-unités potentiellement autonomes</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Cont4 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Cont4">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleCont"/>
+    <!-- https://w3id.org/sdc/ontology#Cont4 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Cont4">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleCont"/>
         <rdfs:label xml:lang="fr">collections</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Cont5 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Cont5">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleCont"/>
+    <!-- https://w3id.org/sdc/ontology#Cont5 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Cont5">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleCont"/>
         <rdfs:label xml:lang="fr">textes subordonnés</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#D1 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#D1">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Decroissement"/>
+    <!-- https://w3id.org/sdc/ontology#D1 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#D1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Decroissement"/>
         <rdfs:label xml:lang="fr">destruction totale</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#D2 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#D2">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Decroissement"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#MA1"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#MA2"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#MA3"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#MA4"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#R1"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#R2"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#R3"/>
+    <!-- https://w3id.org/sdc/ontology#D2 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#D2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Decroissement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#MA1"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#MA2"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#MA3"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#MA4"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#R1"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#R2"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#R3"/>
         <rdfs:label xml:lang="fr">destruction partielle</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#D3 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#D3">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Decroissement"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#MA1"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Permutation"/>
+    <!-- https://w3id.org/sdc/ontology#D3 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#D3">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Decroissement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#MA1"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Permutation"/>
         <rdfs:label xml:lang="fr">division simple</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Decroissement -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Decroissement">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Simple"/>
+    <!-- https://w3id.org/sdc/ontology#Decroissement -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Decroissement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Simple"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Discontinuite -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Discontinuite"/>
-    
+    <!-- https://w3id.org/sdc/ontology#Discontinuite -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Discontinuite"/>
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Ecri1 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Ecri1">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleEcri"/>
+    <!-- https://w3id.org/sdc/ontology#Ecri1 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Ecri1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleEcri"/>
         <rdfs:label xml:lang="fr">texte non structuré, sans aucune discontinuité graphique</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Ecri2 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Ecri2">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleEcri"/>
+    <!-- https://w3id.org/sdc/ontology#Ecri2 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Ecri2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleEcri"/>
         <rdfs:label xml:lang="fr">texte non structuré, mais avec des discontinuités graphiques</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Ecri3 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Ecri3">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleEcri"/>
+    <!-- https://w3id.org/sdc/ontology#Ecri3 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Ecri3">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleEcri"/>
         <rdfs:label xml:lang="fr">texte structuré par un seul appareil hiérarchisant (simple ou alternant), basé sur des discontinuités graphiques, mais sans discontinuités étrangères au système</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Ecri4 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Ecri4">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleEcri"/>
+    <!-- https://w3id.org/sdc/ontology#Ecri4 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Ecri4">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleEcri"/>
         <rdfs:label xml:lang="fr">texte structuré par un seul appareil hiérarchisant, avec présence de discontinuités graphiques non fonctionnelles</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Ecri5 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Ecri5">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleEcri"/>
+    <!-- https://w3id.org/sdc/ontology#Ecri5 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Ecri5">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleEcri"/>
         <rdfs:label xml:lang="fr">texte structuré par différents appareils hiérarchisants, basés sur des discontinuités graphiques, mais sans discontinuités étrangères au système</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Ecri6 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Ecri6">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleEcri"/>
+    <!-- https://w3id.org/sdc/ontology#Ecri6 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Ecri6">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleEcri"/>
         <rdfs:label xml:lang="fr">texte structuré par différents appareils hiérarchisants, présentant en outre des discontinuités non fonctionnelles</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ElCah -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ElCah">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UniCah"/>
+    <!-- https://w3id.org/sdc/ontology#ElCah -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ElCah">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UniCah"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ElCont -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ElCont">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UniCont"/>
+    <!-- https://w3id.org/sdc/ontology#ElCont -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ElCont">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UniCont"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ElEcri -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ElEcri">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UniEcri"/>
+    <!-- https://w3id.org/sdc/ontology#ElEcri -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ElEcri">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UniEcri"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ElMain -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ElMain">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UniMain"/>
+    <!-- https://w3id.org/sdc/ontology#ElMain -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ElMain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UniMain"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ElMarq -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ElMarq">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UniMarq"/>
+    <!-- https://w3id.org/sdc/ontology#ElMarq -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ElMarq">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UniMarq"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ElMat -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ElMat">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UniMat"/>
+    <!-- https://w3id.org/sdc/ontology#ElMat -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ElMat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UniMat"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ElMeP -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ElMeP">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UniMeP"/>
+    <!-- https://w3id.org/sdc/ontology#ElMeP -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ElMeP">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UniMeP"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ElRegl -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ElRegl">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UniRegl"/>
+    <!-- https://w3id.org/sdc/ontology#ElRegl -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ElRegl">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UniRegl"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Hypothetique -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Hypothetique"/>
-    
+    <!-- https://w3id.org/sdc/ontology#Hypothetique -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Hypothetique"/>
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#MA1 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#MA1">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#MutilationAjout"/>
+    <!-- https://w3id.org/sdc/ontology#MA1 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#MA1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#MutilationAjout"/>
         <rdfs:label xml:lang="fr">mutilation d&apos;un codex pour en accoroître un autre</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#MA2 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#MA2">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#MutilationAjout"/>
+    <!-- https://w3id.org/sdc/ontology#MA2 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#MA2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#MutilationAjout"/>
         <rdfs:label xml:lang="fr">mutilation d&apos;un codex pour en constituer un autre</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#MA3 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#MA3">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#MutilationAjout"/>
+    <!-- https://w3id.org/sdc/ontology#MA3 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#MA3">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#MutilationAjout"/>
         <rdfs:label xml:lang="fr">matériaux de rempoi à usage accessoire</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#MA4 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#MA4">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#MutilationAjout"/>
+    <!-- https://w3id.org/sdc/ontology#MA4 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#MA4">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#MutilationAjout"/>
         <rdfs:label xml:lang="fr">palimpsestes</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Main1 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Main1">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleMain"/>
-        <owl:disjointWith rdf:resource="http://Syntaxe.du.Codex/ontology#Main2"/>
+    <!-- https://w3id.org/sdc/ontology#Main1 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Main1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleMain"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/sdc/ontology#Main2"/>
         <rdfs:label xml:lang="fr">plusieurs mains responsables chacune de l&apos;intégralité du système</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Main2 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Main2">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleMain"/>
+    <!-- https://w3id.org/sdc/ontology#Main2 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Main2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleMain"/>
         <rdfs:label xml:lang="fr">plusieurs mains spécialisées dans un ou plusieurs éléments du même système</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Mat1 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Mat1">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleMat"/>
+    <!-- https://w3id.org/sdc/ontology#Mat1 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Mat1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleMat"/>
         <rdfs:label xml:lang="fr">matière parfaitement uniforme</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Mat2 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Mat2">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleMat"/>
+    <!-- https://w3id.org/sdc/ontology#Mat2 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Mat2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleMat"/>
         <rdfs:label xml:lang="fr">matière bien séparées</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Mat3 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Mat3">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleMat"/>
+    <!-- https://w3id.org/sdc/ontology#Mat3 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Mat3">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleMat"/>
         <rdfs:label xml:lang="fr">matière mélangées selon un critère discernable</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Mat4 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Mat4">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleMat"/>
+    <!-- https://w3id.org/sdc/ontology#Mat4 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Mat4">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleMat"/>
         <rdfs:label xml:lang="fr">matières regroupables selon plusieurs critères</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Mat5 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Mat5">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleMat"/>
+    <!-- https://w3id.org/sdc/ontology#Mat5 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Mat5">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleMat"/>
         <rdfs:label xml:lang="fr">matières mélangées au hasard</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Mep1 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Mep1">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleMeP"/>
+    <!-- https://w3id.org/sdc/ontology#Mep1 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Mep1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleMeP"/>
         <rdfs:label xml:lang="fr">type de réglure uniforme (utilisée de manière uniforme)</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Mep2 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Mep2">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleMeP"/>
+    <!-- https://w3id.org/sdc/ontology#Mep2 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Mep2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleMeP"/>
         <rdfs:label xml:lang="fr">types de réglure différentes (chacun utilisé de manière uniforme)</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Mep3 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Mep3">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleMeP"/>
+    <!-- https://w3id.org/sdc/ontology#Mep3 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Mep3">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleMeP"/>
         <rdfs:label xml:lang="fr">type de réglure (presque) uniforme, avec variations mineures</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Mep4 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Mep4">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleMeP"/>
+    <!-- https://w3id.org/sdc/ontology#Mep4 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Mep4">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleMeP"/>
         <rdfs:label xml:lang="fr">types de réglure uniformes, utilisés de manières différentes</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Mep5 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Mep5">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleMeP"/>
+    <!-- https://w3id.org/sdc/ontology#Mep5 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Mep5">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleMeP"/>
         <rdfs:label xml:lang="fr">types de réglure différents, tous à même utilisation</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Modele -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Modele"/>
-    
+    <!-- https://w3id.org/sdc/ontology#Modele -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Modele"/>
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ModeleCah -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ModeleCah">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Modele"/>
+    <!-- https://w3id.org/sdc/ontology#ModeleCah -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ModeleCah">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Modele"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ModeleCont -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ModeleCont">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Modele"/>
+    <!-- https://w3id.org/sdc/ontology#ModeleCont -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ModeleCont">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Modele"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ModeleEcri -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ModeleEcri">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Modele"/>
+    <!-- https://w3id.org/sdc/ontology#ModeleEcri -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ModeleEcri">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Modele"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ModeleMain -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ModeleMain">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Modele"/>
+    <!-- https://w3id.org/sdc/ontology#ModeleMain -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ModeleMain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Modele"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ModeleMarq -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ModeleMarq">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Modele"/>
+    <!-- https://w3id.org/sdc/ontology#ModeleMarq -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ModeleMarq">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Modele"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ModeleMat -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ModeleMat">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Modele"/>
+    <!-- https://w3id.org/sdc/ontology#ModeleMat -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ModeleMat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Modele"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ModeleMeP -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ModeleMeP">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Modele"/>
+    <!-- https://w3id.org/sdc/ontology#ModeleMeP -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ModeleMeP">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Modele"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#ModeleRegl -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#ModeleRegl">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Modele"/>
+    <!-- https://w3id.org/sdc/ontology#ModeleRegl -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#ModeleRegl">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Modele"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Multiples -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Multiples">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Transformation"/>
-        <owl:disjointWith rdf:resource="http://Syntaxe.du.Codex/ontology#Simple"/>
+    <!-- https://w3id.org/sdc/ontology#Multiples -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Multiples">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Transformation"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/sdc/ontology#Simple"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#MutilationAjout -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#MutilationAjout">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Multiples"/>
+    <!-- https://w3id.org/sdc/ontology#MutilationAjout -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#MutilationAjout">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Multiples"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#P1 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#P1">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Permutation"/>
+    <!-- https://w3id.org/sdc/ontology#P1 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#P1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Permutation"/>
         <rdfs:label xml:lang="fr">permutation de folios ou de cahiers</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Permutation -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Permutation">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Multiples"/>
+    <!-- https://w3id.org/sdc/ontology#Permutation -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Permutation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Multiples"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#R1 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#R1">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Remplacement"/>
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Restauration"/>
+    <!-- https://w3id.org/sdc/ontology#R1 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#R1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Remplacement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Restauration"/>
         <rdfs:label xml:lang="fr">suppression et rajout de matière (avec ou sans contenu)</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#R2 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#R2">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Remplacement"/>
+    <!-- https://w3id.org/sdc/ontology#R2 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#R2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Remplacement"/>
         <rdfs:label xml:lang="fr">suppression et rajout de contenu</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#R3 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#R3">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Remplacement"/>
+    <!-- https://w3id.org/sdc/ontology#R3 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#R3">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Remplacement"/>
         <rdfs:label xml:lang="fr">superposition de matière</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Regl1 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Regl1">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleRegl"/>
+    <!-- https://w3id.org/sdc/ontology#Regl1 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Regl1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleRegl"/>
         <rdfs:label xml:lang="fr">réglure uniforme (technique, système, méthode)</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Regl2 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Regl2">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleRegl"/>
+    <!-- https://w3id.org/sdc/ontology#Regl2 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Regl2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleRegl"/>
         <rdfs:label xml:lang="fr">technique différentes</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Regl3 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Regl3">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#ModeleRegl"/>
+    <!-- https://w3id.org/sdc/ontology#Regl3 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Regl3">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#ModeleRegl"/>
         <rdfs:label xml:lang="fr">technique uniforme, mais autres discontinuités</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Remplacement -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Remplacement">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Multiples"/>
+    <!-- https://w3id.org/sdc/ontology#Remplacement -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Remplacement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Multiples"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Restauration -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Restauration">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Multiples"/>
+    <!-- https://w3id.org/sdc/ontology#Restauration -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Restauration">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Multiples"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Simple -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Simple">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Transformation"/>
+    <!-- https://w3id.org/sdc/ontology#Simple -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Simple">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Transformation"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Stratum -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Stratum"/>
-    
+    <!-- https://w3id.org/sdc/ontology#Stratum -->
 
-
-    <!-- http://Syntaxe.du.Codex/ontology#Transformation -->
-
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Transformation"/>
-    
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Stratum"/>
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UA1 -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UA1">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UnionAjout"/>
+    <!-- https://w3id.org/sdc/ontology#Transformation -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Transformation"/>
+
+
+
+    <!-- https://w3id.org/sdc/ontology#UA1 -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UA1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UnionAjout"/>
         <rdfs:label xml:lang="fr">union suivi d&apos;accroissement</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniCah -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniCah">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Unit"/>
+    <!-- https://w3id.org/sdc/ontology#UniCah -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniCah">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniCirc -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniCirc"/>
-    
+    <!-- https://w3id.org/sdc/ontology#UniCirc -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniCirc"/>
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniCont -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniCont">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Unit"/>
+    <!-- https://w3id.org/sdc/ontology#UniCont -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniCont">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniEcri -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniEcri">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Unit"/>
+    <!-- https://w3id.org/sdc/ontology#UniEcri -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniEcri">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniMain -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniMain">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Unit"/>
+    <!-- https://w3id.org/sdc/ontology#UniMain -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniMain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniMarq -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniMarq">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Unit"/>
+    <!-- https://w3id.org/sdc/ontology#UniMarq -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniMarq">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniMat -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniMat">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Unit"/>
+    <!-- https://w3id.org/sdc/ontology#UniMat -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniMat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniMeP -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniMeP">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Unit"/>
+    <!-- https://w3id.org/sdc/ontology#UniMeP -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniMeP">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniProd -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniProd"/>
-    
+    <!-- https://w3id.org/sdc/ontology#UniProd -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniProd"/>
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniProd-C -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniProd-C">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
+    <!-- https://w3id.org/sdc/ontology#UniProd-C -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniProd-C">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniProd-C-MC -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniProd-C-MC">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
+    <!-- https://w3id.org/sdc/ontology#UniProd-C-MC -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniProd-C-MC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniProd-M -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniProd-M">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
+    <!-- https://w3id.org/sdc/ontology#UniProd-M -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniProd-M">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniProd-MC -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniProd-MC">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#UniProd"/>
+    <!-- https://w3id.org/sdc/ontology#UniProd-MC -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniProd-MC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UniRegl -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UniRegl">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Unit"/>
+    <!-- https://w3id.org/sdc/ontology#UniRegl -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UniRegl">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#UnionAjout -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#UnionAjout">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Multiples"/>
+    <!-- https://w3id.org/sdc/ontology#UnionAjout -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#UnionAjout">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Multiples"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#Unit -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#Unit">
+    <!-- https://w3id.org/sdc/ontology#Unit -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#Unit">
         <rdfs:comment xml:lang="fr">&quot;Dans une première étape, les discontinuités sont envisagées de manière individuelle. Nous relevons d&apos;abord, de façon acritique, toutes celles d&apos;un même type, puis tentons de les regrouper en vue de faire ressortir celles d&apos;entre elles qui sont significatives. Pour désigner clairement ces deux niveaux, nous appelons &apos;éléments&apos; les parties délimitées par les discontinuités les plus simples et &apos;unités&apos; les regroupements d&apos;éléments.&quot; Andrist, P., P. Canart, and M. Maniaci 2013. La syntaxe du codex. Essai de codicologie structurale, Bibliologia: Elementa ad Librorum Studia Pertinentia, 34 (Turnhout: Brepols, 2013), p. 83</rdfs:comment>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#creation -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#creation">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#MA2"/>
+    <!-- https://w3id.org/sdc/ontology#creation -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#creation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#MA2"/>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#primary -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#primary">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Stratum"/>
+    <!-- https://w3id.org/sdc/ontology#primary -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#primary">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Stratum"/>
         <rdfs:comment xml:lang="en">independent writing projects, self standing material, self standing content</rdfs:comment>
         <rdfs:comment xml:lang="en">paratactic constitutive parts of the book</rdfs:comment>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#quaternary -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#quaternary">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Stratum"/>
+    <!-- https://w3id.org/sdc/ontology#quaternary -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#quaternary">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Stratum"/>
         <rdfs:comment xml:lang="en">Independent writing project, content is self standing. No salf standing material.</rdfs:comment>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#secondary -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#secondary">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Stratum"/>
+    <!-- https://w3id.org/sdc/ontology#secondary -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#secondary">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Stratum"/>
         <rdfs:comment xml:lang="en">no independent writing project. Self standing content, self standing material.</rdfs:comment>
     </owl:Class>
-    
 
 
-    <!-- http://Syntaxe.du.Codex/ontology#tertiary -->
 
-    <owl:Class rdf:about="http://Syntaxe.du.Codex/ontology#tertiary">
-        <rdfs:subClassOf rdf:resource="http://Syntaxe.du.Codex/ontology#Stratum"/>
+    <!-- https://w3id.org/sdc/ontology#tertiary -->
+
+    <owl:Class rdf:about="https://w3id.org/sdc/ontology#tertiary">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sdc/ontology#Stratum"/>
         <rdfs:comment xml:lang="en">No inpdendent writing project. The Unit in this stratum does not stand by it self content wise, although it could in terms of material.</rdfs:comment>
     </owl:Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // General axioms
@@ -1045,144 +1045,144 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#A1"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#A2"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#A3"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#A4"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#A1"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#A2"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#A3"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#A4"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Cah1"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Cah2"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Cah3"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Cah4"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Cah1"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Cah2"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Cah3"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Cah4"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Cont1"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Cont2"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Cont3"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Cont4"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Cont5"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Cont1"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Cont2"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Cont3"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Cont4"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Cont5"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#D1"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#D2"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#D3"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#D1"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#D2"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#D3"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Ecri1"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Ecri2"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Ecri3"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Ecri4"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Ecri5"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Ecri6"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Ecri1"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Ecri2"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Ecri3"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Ecri4"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Ecri5"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Ecri6"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#MA1"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#MA2"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#MA3"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#MA4"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#MA1"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#MA2"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#MA3"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#MA4"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Mat1"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Mat2"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Mat3"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Mat4"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Mat5"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Mat1"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Mat2"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Mat3"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Mat4"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Mat5"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Mep1"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Mep2"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Mep3"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Mep4"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Mep5"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Mep1"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Mep2"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Mep3"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Mep4"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Mep5"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#ModeleCah"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#ModeleEcri"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#ModeleMain"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#ModeleMarq"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#ModeleMat"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#ModeleMeP"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#ModeleRegl"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#ModeleCah"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#ModeleEcri"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#ModeleMain"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#ModeleMarq"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#ModeleMat"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#ModeleMeP"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#ModeleRegl"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#MutilationAjout"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Permutation"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Remplacement"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Restauration"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#UnionAjout"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#MutilationAjout"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Permutation"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Remplacement"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Restauration"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UnionAjout"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#R1"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#R2"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#R3"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#R1"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#R2"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#R3"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Regl1"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Regl2"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#Regl3"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Regl1"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Regl2"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#Regl3"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#UniCah"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#UniEcri"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#UniMain"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#UniMat"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#UniMeP"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#UniRegl"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniCah"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniEcri"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniMain"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniMat"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniMeP"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniRegl"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#UniProd-C"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#UniProd-C-MC"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#UniProd-M"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#UniProd-MC"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniProd-C"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniProd-C-MC"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniProd-M"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniProd-MC"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#primary"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#quaternary"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#secondary"/>
-            <rdf:Description rdf:about="http://Syntaxe.du.Codex/ontology#tertiary"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#primary"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#quaternary"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#secondary"/>
+            <rdf:Description rdf:about="https://w3id.org/sdc/ontology#tertiary"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
@@ -1190,4 +1190,3 @@
 
 
 <!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
-
