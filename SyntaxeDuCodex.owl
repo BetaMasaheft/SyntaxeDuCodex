@@ -86,10 +86,22 @@
     <!-- https://w3id.org/sdc/ontology#containsUnits -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#containsUnits">
-        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniCirc"/>
-        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
-        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
-        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Unit"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniCirc"/>
+                    <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniProd"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniCirc"/>
+                    <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniProd"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -117,8 +129,14 @@
     <!-- https://w3id.org/sdc/ontology#hasTransformationModel -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#hasTransformationModel">
-        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniCirc"/>
-        <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniCirc"/>
+                    <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniProd"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#Transformation"/>
     </owl:ObjectProperty>
     
@@ -165,8 +183,14 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#produces">
         <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#Transformation"/>
-        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#UniCirc"/>
-        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniCirc"/>
+                    <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniProd"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -175,8 +199,14 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/sdc/ontology#resultsIn">
         <rdfs:domain rdf:resource="https://w3id.org/sdc/ontology#Transformation"/>
-        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#UniCirc"/>
-        <rdfs:range rdf:resource="https://w3id.org/sdc/ontology#UniProd"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniCirc"/>
+                    <rdf:Description rdf:about="https://w3id.org/sdc/ontology#UniProd"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
